@@ -16,16 +16,16 @@ blackRect2 = RectangleAsset(900, 25, whiteOutline, black)
 blackRect3 = RectangleAsset(25, 600, whiteOutline, black)
 blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
 
-Sprite(blackRect1, (0,200))
-Sprite(blackRect2, (0,400))
-Sprite(blackRect3, (250,10))
-Sprite(blackRect4, (600,10))
+#Sprite(blackRect1, (0,200))
+#Sprite(blackRect2, (0,400))
+#Sprite(blackRect3, (250,10))
+#Sprite(blackRect4, (600,10))
 
 #pieces: cirlce and 'x'
 redCircle = CircleAsset(75, whiteOutline, red)
 whiteCircle = CircleAsset(60, whiteOutline, white)
-blackLine1 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
-blackLine2 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
+blackLine1 = PolygonAsset([(0,0), (10,10), (60,300)], whiteOutline, black)
+blackLine2 = PolygonAsset([(0,0), (10,10) (60,300)], whiteOutline, black)
 
 
 Sprite(blackLine1,(300,0))
