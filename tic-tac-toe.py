@@ -25,7 +25,7 @@ blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
 redCircle = CircleAsset(75, whiteOutline, red)
 whiteCircle = CircleAsset(60, whiteOutline, white)
 blackLine1 = RectangleAsset(25, 200, whiteOutline, black)
-blackLine2 = RectangleAsset(25, 300, whiteOutline, black)
+blackLine2 = RectangleAsset(100, 30, whiteOutline, black)
 
 
 Sprite(blackLine1,(300,0))
