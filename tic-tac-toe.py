@@ -15,9 +15,9 @@ blackRect4 = RectangleAsset(200, 100, whiteOutine, black)
 
 
 Sprite(blackRect1, (200,300))
-Sprite(blackRect2, (200,300))
-Sprite(blackRect3, (200,300))
-Sprite(blackRect4, (200,300))
+Sprite(blackRect2, (200,500))
+Sprite(blackRect3, (200,800))
+Sprite(blackRect4, (200,100))
 
 #runs the game
 #if __name__ == '__main__':
