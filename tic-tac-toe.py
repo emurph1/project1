@@ -20,5 +20,5 @@ Sprite(blackLine3, (200,300))
 Sprite(blackLine4, (200,300))
 
 #runs the game
-if __name__ == '__main__':
+#if __name__ == '__main__':
     
