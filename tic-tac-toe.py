@@ -8,16 +8,16 @@ white = Color(0xFFFFFF,1)
 
 whiteOutine = LineStyle(1, white)
 
-blackRect1 = RectangleAsset(800, 25, whiteOutine, black)
-blackRect2 = RectangleAsset(800, 25, whiteOutine, black)
+blackRect1 = RectangleAsset(900, 25, whiteOutine, black)
+blackRect2 = RectangleAsset(900, 25, whiteOutine, black)
 blackRect3 = RectangleAsset(25, 600, whiteOutine, black)
 blackRect4 = RectangleAsset(25, 600, whiteOutine, black)
 
 
 Sprite(blackRect1, (0,200))
 Sprite(blackRect2, (0,400))
-Sprite(blackRect3, (200,10))
-Sprite(blackRect4, (400,10))
+Sprite(blackRect3, (250,10))
+Sprite(blackRect4, (600,10))
 
 
 #runs the game
