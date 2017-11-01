@@ -24,6 +24,7 @@ Sprite(blackRect4, (600,10))
 #pieces: cirlce and 'x'
 redCircle = CircleAsset(100, whiteOutline, red)
 
+Sprite(redCircle,(100, 100))
 
 
 #runs the game
