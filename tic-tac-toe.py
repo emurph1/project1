@@ -23,10 +23,10 @@ Sprite(blackRect4, (600,10))
 
 #pieces: cirlce and 'x'
 redCircle = CircleAsset(75, whiteOutline, red)
-whiteCircle = CircleAsset(100, whiteOutline, white)
+whiteCircle = CircleAsset(50, whiteOutline, white)
 
 Sprite(redCircle,(130, 100))
-
+Sprite(whiteCircle(,130,100))
 
 #runs the game
 #if __name__ == '__main__':
