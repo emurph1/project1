@@ -8,13 +8,13 @@ white = Color(0xFFFFFF,1)
 red = Color(0xFF0000,1)
 blue = Color(0x0000FF,1)
 
-whiteOutine = LineStyle(1, white)
+whiteOutline = LineStyle(1, white)
 
 #creates the board
-blackRect1 = RectangleAsset(900, 25, whiteOutine, black)
-blackRect2 = RectangleAsset(900, 25, whiteOutine, black)
-blackRect3 = RectangleAsset(25, 600, whiteOutine, black)
-blackRect4 = RectangleAsset(25, 600, whiteOutine, black)
+blackRect1 = RectangleAsset(900, 25, whiteOutline, black)
+blackRect2 = RectangleAsset(900, 25, whiteOutline, black)
+blackRect3 = RectangleAsset(25, 600, whiteOutline, black)
+blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
 
 Sprite(blackRect1, (0,200))
 Sprite(blackRect2, (0,400))
