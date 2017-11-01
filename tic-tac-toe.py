@@ -8,16 +8,17 @@ white = Color(0xFFFFFF,1)
 
 whiteOutine = LineStyle(1, white)
 
-blackRect1 = RectangleAsset(200, 100, whiteOutine, black)
-blackRect2 = RectangleAsset(200, 100, whiteOutine, black)
-blackRect3 = RectangleAsset(200, 100, whiteOutine, black)
-blackRect4 = RectangleAsset(200, 100, whiteOutine, black)
+blackRect1 = RectangleAsset(800, 25, whiteOutine, black)
+blackRect2 = RectangleAsset(800, 25, whiteOutine, black)
+blackRect3 = RectangleAsset(25, 600, whiteOutine, black)
+blackRect4 = RectangleAsset(25, 600, whiteOutine, black)
 
 
-Sprite(blackRect1, (200,300))
-Sprite(blackRect2, (200,500))
-Sprite(blackRect3, (200,800))
-Sprite(blackRect4, (200,100))
+Sprite(blackRect1, (0,200))
+Sprite(blackRect2, (0,400))
+Sprite(blackRect3, (200,10))
+Sprite(blackRect4, (400,10))
+
 
 #runs the game
 #if __name__ == '__main__':
