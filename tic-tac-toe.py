@@ -22,9 +22,10 @@ Sprite(blackRect3, (250,10))
 Sprite(blackRect4, (600,10))
 
 #pieces: cirlce and 'x'
-redCircle = CircleAsset(100, whiteOutline, red)
+redCircle = CircleAsset(75, whiteOutline, red)
+whiteCircle = CircleAsset(100, whiteOutline, white)
 
-Sprite(redCircle,(100, 100))
+Sprite(redCircle,(130, 100))
 
 
 #runs the game
