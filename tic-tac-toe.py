@@ -24,8 +24,8 @@ Sprite(blackRect4, (600,10))
 #pieces: cirlce and 'x'
 redCircle = CircleAsset(75, whiteOutline, red)
 whiteCircle = CircleAsset(60, whiteOutline, white)
-blackline1 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
-blackline2 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
+blackLine1 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
+blackLine2 = PolygonAsset([(0,0), (60,300)], whiteOutline, black)
 
 
 Sprite(blackLine1,(300,0))
