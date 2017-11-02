@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
 
     Sprite(blackLine1,(700,30))
-    Sprite(blackLine2,(700,170))
+    Sprite(blackLine2,(700,180))
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
 
