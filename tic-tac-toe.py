@@ -36,7 +36,7 @@ if __name__ == '__main__':
     Sprite(sideSquare1,)
     Sprite(sideSquare2,(0,225))
     Sprite(sideSquare3,(0,425))
-    Sprite(middleSquare1, (250,0))
+    Sprite(middleSquare1, (275,0))
     
 
 
