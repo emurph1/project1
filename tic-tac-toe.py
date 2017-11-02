@@ -24,7 +24,7 @@ if __name__ == '__main__':
     sideSquare1 = RectangleAsset(250, 200, whiteOutline, red)
     sideSquare2 = RectangleAsset(250, 175, whiteOutline, red)
     sideSquare3 = RectangleAsset(250, 175, whiteOutline, red)
-    middleSquare1 = RectangleAsset(250, 200, whiteOutline, red)
+    middleSquare1 = RectangleAsset(275, 200, whiteOutline, red)
     middleSquare2 = RectangleAsset(250, 175, whiteOutline, red)
     middleSquare3 = RectangleAsset(250, 175, whiteOutline, red)
     
