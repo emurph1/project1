@@ -27,11 +27,11 @@ if __name__ == '__main__':
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
     whiteCircle = CircleAsset(60, whiteOutline, white)
-    blackLine1 = LineAsset(140, 200, blackOutline)
-    blackLine2 = LineAsset(140, -200, blackOutline)
+    blackLine1 = LineAsset(120, 150, blackOutline)
+    blackLine2 = LineAsset(120, -150, blackOutline)
 
 
-    Sprite(blackLine1,(700,50))
+    Sprite(blackLine1,(700,30))
     Sprite(blackLine2,(700,150))
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
