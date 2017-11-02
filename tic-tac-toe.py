@@ -8,6 +8,7 @@ white = Color(0xFFFFFF,1)
 red = Color(0xFF0000,1)
 blue = Color(0x0000FF,1)
 
+blackOutline = LineStyle(1, black)
 whiteOutline = LineStyle(1, white)
 
 #creates the board
