@@ -25,8 +25,8 @@ if __name__ == '__main__':
     sideSquare2 = RectangleAsset(250, 175, whiteOutline, red)
     sideSquare3 = RectangleAsset(250, 175, whiteOutline, red)
     middleSquare1 = RectangleAsset(275, 200, whiteOutline, red)
-    middleSquare2 = RectangleAsset(250, 175, whiteOutline, red)
-    middleSquare3 = RectangleAsset(250, 175, whiteOutline, red)
+    middleSquare2 = RectangleAsset(275, 180, whiteOutline, red)
+    middleSquare3 = RectangleAsset(275, 175, whiteOutline, red)
     
 
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
@@ -37,7 +37,8 @@ if __name__ == '__main__':
     Sprite(sideSquare2,(0,225))
     Sprite(sideSquare3,(0,425))
     Sprite(middleSquare1, (275,0))
-    
+    Sprite(middleSquare2, (275,220))
+    Sprite(middleSquare3, (275,425))
 
 
 #pieces: cirlce and 'x'
