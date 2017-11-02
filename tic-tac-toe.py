@@ -27,8 +27,8 @@ if __name__ == '__main__':
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
     whiteCircle = CircleAsset(60, whiteOutline, white)
-    blackLine1 = LineAsset(70, 100, blackOutline)
-    blackLine2 = LineAsset(70, -100, blackOutline)
+    blackLine1 = LineAsset(140, 200, blackOutline)
+    blackLine2 = LineAsset(140, -200, blackOutline)
 
 
     Sprite(blackLine1,(700,50))
