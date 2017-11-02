@@ -32,7 +32,7 @@ if __name__ == '__main__':
     Sprite(blackRect4, (600,10))
     Sprite(sideSquare1)
     Sprite(sideSquare2,(0,210))
-    Sprite(sideSquare3,(0,410))
+    Sprite(sideSquare3,(0,420))
 
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
