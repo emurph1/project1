@@ -11,39 +11,41 @@ blue = Color(0x0000FF,1)
 blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
-#def isEmpty:
-    
+#CONSTANTS
+COLS = 60
+ROWS = 2
+CELL_SIZE= 100
 
 #runs the game
 if __name__ == '__main__':
 #creates the board
-    blackRect1 = RectangleAsset(900, 25, whiteOutline, black)
+    blackRect1 = RectangleAsset(COLS * CELL_SIZE, ROWS * CELL_SIZE, whiteOutline, black)
     blackRect2 = RectangleAsset(900, 25, whiteOutline, black)
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black)
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
-    sideSquare1 = RectangleAsset(250, 200, whiteOutline, red)
+    sideSquare1 = RectangleAsset(250, 210, whiteOutline, red)
     sideSquare2 = RectangleAsset(250, 175, whiteOutline, red)
-    sideSquare3 = RectangleAsset(200, 150, whiteOutline, red)
+    sideSquare3 = RectangleAsset(250, 175, whiteOutline, red)
     #sideSquare4 = RectangleAsset(250, 200, whiteOutline, red)
 
     Sprite(blackRect1, (0,200))
-    Sprite(blackRect2, (0,400))
-    Sprite(blackRect3, (250,10))
-    Sprite(blackRect4, (600,10))
-    Sprite(sideSquare1)
-    Sprite(sideSquare2,(0,225))
-    Sprite(sideSquare3,(0,420))
+    #Sprite(blackRect2, (0,400))
+    #Sprite(blackRect3, (250,10))
+    #Sprite(blackRect4, (600,10))
+    #Sprite(sideSquare1)
+    #Sprite(sideSquare2,(0,225))
+    #Sprite(sideSquare3,(0,420))
 
 #pieces: cirlce and 'x'
-    redCircle = CircleAsset(75, whiteOutline, red)
-    whiteCircle = CircleAsset(60, whiteOutline, white)
-    blackLine1 = LineAsset(120, 150, blackOutline)
-    blackLine2 = LineAsset(120, -150, blackOutline)
+    #redCircle = CircleAsset(75, whiteOutline, red)
+    #whiteCircle = CircleAsset(60, whiteOutline, white)
+    #blackLine1 = LineAsset(120, 150, blackOutline)
+    #blackLine2 = LineAsset(120, -150, blackOutline)
 
-    Sprite(blackLine1,(700,30))
-    Sprite(blackLine2,(700,180))
-    Sprite(redCircle,(130, 100))
-    Sprite(whiteCircle,(130, 100))
+    #Sprite(blackLine1,(700,30))
+    #Sprite(blackLine2,(700,180))
+    #Sprite(redCircle,(130, 100))
+    #Sprite(whiteCircle,(130, 100))
 
 #App().listenMouseEvent('click',mouseClick)
 App().run()
