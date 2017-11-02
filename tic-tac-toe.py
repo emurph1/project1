@@ -31,8 +31,8 @@ if __name__ == '__main__':
     blackLine2 = LineAsset(70, -100, blackOutline)
 
 
-    Sprite(blackLine1,(600,50))
-    Sprite(blackLine2,(600,150))
+    Sprite(blackLine1,(700,50))
+    Sprite(blackLine2,(700,150))
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
 
