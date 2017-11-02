@@ -23,7 +23,7 @@ if __name__ == '__main__':
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
     sideSquare1 = RectangleAsset(250, 200, whiteOutline, red)
     sideSquare2 = RectangleAsset(250, 175, whiteOutline, red)
-    sideSquare3 = RectangleAsset(250, 185, whiteOutline, red)
+    sideSquare3 = RectangleAsset(250, 175, whiteOutline, red)
     #sideSquare4 = RectangleAsset(250, 200, whiteOutline, red)
 
     Sprite(blackRect1, (0,200))
