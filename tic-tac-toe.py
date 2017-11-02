@@ -20,8 +20,8 @@ if __name__ == '__main__':
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
 
     Sprite(blackRect1, (0,200))
-    Sprite(blackRect2, (0,400))
     Sprite(blackRect3, (250,10))
+    Sprite(blackRect2, (0,400))
     Sprite(blackRect4, (600,10))
 
 #pieces: cirlce and 'x'
