@@ -17,29 +17,16 @@ whiteOutline = LineStyle(1, white)
 #runs the game
 if __name__ == '__main__':
 #creates the board
-    blackRect1 = RectangleAsset(900, 25, whiteOutline, black)
-    blackRect2 = RectangleAsset(900, 25, whiteOutline, black)
-    blackRect3 = RectangleAsset(25, 600, whiteOutline, black)
-    blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
-    sideSquare1 = RectangleAsset(250, 200, whiteOutline, red)
-    sideSquare2 = RectangleAsset(250, 175, whiteOutline, red)
-    sideSquare3 = RectangleAsset(250, 175, whiteOutline, red)
-    middleSquare1 = RectangleAsset(275, 200, whiteOutline, red)
-    middleSquare2 = RectangleAsset(275, 180, whiteOutline, red)
-    middleSquare3 = RectangleAsset(275, 175, whiteOutline, red)
-    
+    blackRect1 = RectangleAsset(750, 25, whiteOutline, black) #TOP HORIZONTAL
+    blackRect2 = RectangleAsset(750, 25, whiteOutline, black) #BOTTOM HORIZONTAL
+    blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
+    blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
 
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
-    Sprite(sideSquare1,)
-    Sprite(sideSquare2,(0,225))
-    Sprite(sideSquare3,(0,425))
-    Sprite(middleSquare1, (275,0))
-    Sprite(middleSquare2, (275,220))
-    Sprite(middleSquare3, (275,425))
-
+    
 
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
