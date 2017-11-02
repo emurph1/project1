@@ -22,12 +22,17 @@ if __name__ == '__main__':
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black)
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black)
     sideSquare1 = RectangleAsset(250, 200, whiteOutline, red)
+    sideSquare2 = RectangleAsset(250, 200, whiteOutline, red)
+    sideSquare3 = RectangleAsset(250, 200, whiteOutline, red)
+    #sideSquare4 = RectangleAsset(250, 200, whiteOutline, red)
 
     Sprite(blackRect1, (0,200))
     Sprite(blackRect2, (0,400))
     Sprite(blackRect3, (250,10))
     Sprite(blackRect4, (600,10))
     Sprite(sideSquare1)
+    Sprite(sideSquare2,(15,0))
+    Sprite(sideSquare3,(15,0))
 
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
