@@ -29,7 +29,7 @@ blackLine1 = LineAsset(70, 100, blackOutline)
 blackLine2 = LineAsset(70, -100, blackOutline)
 
 
-Sprite(blackLine1,(600,0))
+Sprite(blackLine1,(600,50))
 Sprite(blackLine2,(600,100))
 Sprite(redCircle,(130, 100))
 Sprite(whiteCircle,(130, 100))
