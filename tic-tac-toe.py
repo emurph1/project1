@@ -44,7 +44,7 @@ if __name__ == '__main__':
     square2 = RectangleAsset(250, 175, whiteOutline, red)
     square3 = RectangleAsset(250, 175, whiteOutline, red)
     square4 = RectangleAsset(275, 200, whiteOutline, red)
-    square5 = RectangleAsset(250, 175, whiteOutline, red)
+    square5 = RectangleAsset(275, 175, whiteOutline, red)
     square6 = RectangleAsset(275, 175, whiteOutline, red)
     square7 = RectangleAsset(250, 200, whiteOutline, red)
     square8 = RectangleAsset(250, 175, whiteOutline, red)
@@ -55,11 +55,11 @@ if __name__ == '__main__':
     Sprite(square2,(0,225))
     Sprite(square3,(0,425))
     Sprite(square4,(275,0))
+    Sprite(square5, (275,225))
     Sprite(square6, (275,425))
     Sprite(square7, (575,0))
     Sprite(square8, (575,225))
     Sprite(square9, (575,425))
-    #Sprite(square9, (575,425))
-
+    
 #App().listenMouseEvent('click',mouseClick1)
 App().run()
