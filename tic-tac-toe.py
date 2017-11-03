@@ -27,20 +27,6 @@ if __name__ == '__main__':
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
-    
-
-#pieces: cirlce and 'x'
-    redCircle = CircleAsset(75, whiteOutline, red)
-    whiteCircle = CircleAsset(60, whiteOutline, white)
-    blackLine1 = LineAsset(120, 150, blackOutline)
-    blackLine2 = LineAsset(120, -150, blackOutline)
-    
-     Sprite(redCircle,(130, 100))
-    Sprite(whiteCircle,(130, 100))
-    
-
-    Sprite(blackLine1,(650,30))
-    Sprite(blackLine2,(650,180))
 
     square1 = RectangleAsset(250, 200, whiteOutline, red)
     square2 = RectangleAsset(250, 175, whiteOutline, white)
@@ -61,6 +47,18 @@ if __name__ == '__main__':
     Sprite(square7, (575,0))
     Sprite(square8, (575,225))
     Sprite(square9, (575,425))
+    
+#pieces: cirlce and 'x'
+    redCircle = CircleAsset(75, whiteOutline, red)
+    whiteCircle = CircleAsset(60, whiteOutline, white)
+    blackLine1 = LineAsset(120, 150, blackOutline)
+    blackLine2 = LineAsset(120, -150, blackOutline)
+    
+    Sprite(redCircle,(130, 100))
+    Sprite(whiteCircle,(130, 100))
+    
+    Sprite(blackLine1,(650,30))
+    Sprite(blackLine2,(650,180))
     
 #App().listenMouseEvent('click',mouseClick1)
 App().run()
