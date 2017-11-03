@@ -28,6 +28,7 @@ if __name__ == '__main__':
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
 
+#Creates the white boxes
     square1 = RectangleAsset(250, 200, whiteOutline, red)
     square2 = RectangleAsset(250, 175, whiteOutline, white)
     square3 = RectangleAsset(250, 175, whiteOutline, white)
