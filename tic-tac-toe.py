@@ -11,10 +11,14 @@ blue = Color(0x0000FF,1)
 blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
-def mouseClick(Event):
+def mouseClick1(Event):
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
-
+    
+def mouseClick2(Event):
+    Sprite(blackLine1,(650,30))
+    Sprite(blackLine2,(650,180))
+    
 #runs the game
 if __name__ == '__main__':
 #creates the board
@@ -35,9 +39,10 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
 
-    Sprite(blackLine1,(650,30))
-    Sprite(blackLine2,(650,180))
+    
     
 
-App().listenMouseEvent('click',mouseClick)
+App().listenMouseEvent('click',mouseClick1)
+App().listenMouseEvent('click',mouseClick2)
+#App().listenMouseEvent('click',mouseClick3)
 App().run()
