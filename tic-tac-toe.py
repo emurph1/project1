@@ -17,8 +17,8 @@ whiteOutline = LineStyle(1, white)
 #runs the game
 if __name__ == '__main__':
 #creates the board
-    blackRect1 = RectangleAsset(850, 25, whiteOutline, black) #TOP HORIZONTAL
-    blackRect2 = RectangleAsset(850, 25, whiteOutline, black) #BOTTOM HORIZONTAL
+    blackRect1 = RectangleAsset(835, 25, whiteOutline, black) #TOP HORIZONTAL
+    blackRect2 = RectangleAsset(835, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
 
