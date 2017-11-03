@@ -23,8 +23,8 @@ whiteOutline = LineStyle(1, white)
 #runs the game
 if __name__ == '__main__':
 #creates the board
-    blackRect1 = RectangleAsset(835, 25, whiteOutline, black) #TOP HORIZONTAL
-    blackRect2 = RectangleAsset(835, 25, whiteOutline, black) #BOTTOM HORIZONTAL
+    blackRect1 = RectangleAsset(826, 25, whiteOutline, black) #TOP HORIZONTAL
+    blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
 
@@ -44,8 +44,8 @@ if __name__ == '__main__':
     square2 = RectangleAsset(250, 175, whiteOutline, white)
     square3 = RectangleAsset(250, 175, whiteOutline, white)
     square4 = RectangleAsset(275, 200, whiteOutline, white)
-    square5 = RectangleAsset(275, 175, whiteOutline, red)
-    square6 = RectangleAsset(250, 175, whiteOutline, red)
+    square5 = RectangleAsset(275, 175, whiteOutline, white)
+    square6 = RectangleAsset(250, 200, whiteOutline, red)
     square7 = RectangleAsset(275, 200, whiteOutline, red)
     square8 = RectangleAsset(250, 175, whiteOutline, red)
     square9 = RectangleAsset(250, 175, whiteOutline, red)
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     Sprite(square3,(0,425))
     Sprite(square4,(275,0))
     Sprite(square5, (275,425))
-    #Sprite(square6, (275,425))
+    Sprite(square6, (575,0))
     #Sprite(square7, (275,425))
     #Sprite(square8, (275,425))
     #Sprite(square9, (275,425))
