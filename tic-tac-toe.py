@@ -19,6 +19,7 @@ def mouseClick2(Event):
     Sprite(blackLine1,(650,30))
     Sprite(blackLine2,(650,180))
     
+    
 #runs the game
 if __name__ == '__main__':
 #creates the board
