@@ -12,7 +12,7 @@ blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
 def mouseClick(Event):
-    cirlce
+    circle
 
 #runs the game
 if __name__ == '__main__':
@@ -39,5 +39,5 @@ if __name__ == '__main__':
     circle = Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
 
-#App().listenMouseEvent('click',mouseClick)
+App().listenMouseEvent('click',mouseClick)
 App().run()
