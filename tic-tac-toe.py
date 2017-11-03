@@ -41,9 +41,9 @@ if __name__ == '__main__':
     blackLine2 = LineAsset(120, -150, blackOutline)
 
     square1 = RectangleAsset(250, 200, whiteOutline, red)
-    square2 = RectangleAsset(250, 150, whiteOutline, red)
-    #square3 =
-    #square4 =
+    square2 = RectangleAsset(250, 175, whiteOutline, red)
+    square3 = RectangleAsset(250, 175, whiteOutline, red)
+    square4 = RectangleAsset(275, 200, whiteOutline, red)
     #square5 =
     #square6 =
     #square7 =
@@ -52,6 +52,9 @@ if __name__ == '__main__':
     
     Sprite(square1)
     Sprite(square2,(0,225))
+    Sprite(square3,(0,425))
+    Sprite(square4,(275,0))
+    
     
     
 
