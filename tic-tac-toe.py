@@ -41,14 +41,14 @@ if __name__ == '__main__':
     blackLine2 = LineAsset(120, -150, blackOutline)
 
     square1 = RectangleAsset(250, 200, whiteOutline, red)
-    square2 = RectangleAsset(250, 175, whiteOutline, red)
-    square3 = RectangleAsset(250, 175, whiteOutline, red)
-    square4 = RectangleAsset(275, 200, whiteOutline, red)
-    square5 = RectangleAsset(275, 175, whiteOutline, red)
-    square6 = RectangleAsset(275, 175, whiteOutline, red)
-    square7 = RectangleAsset(250, 200, whiteOutline, red)
-    square8 = RectangleAsset(250, 175, whiteOutline, red)
-    square9 = RectangleAsset(250, 175, whiteOutline, red)
+    square2 = RectangleAsset(250, 175, whiteOutline, white)
+    square3 = RectangleAsset(250, 175, whiteOutline, white)
+    square4 = RectangleAsset(275, 200, whiteOutline, white)
+    square5 = RectangleAsset(275, 175, whiteOutline, white)
+    square6 = RectangleAsset(275, 175, whiteOutline, white)
+    square7 = RectangleAsset(250, 200, whiteOutline, white)
+    square8 = RectangleAsset(250, 175, whiteOutline, white)
+    square9 = RectangleAsset(250, 175, whiteOutline, white)
     
     
     Sprite(square1)
