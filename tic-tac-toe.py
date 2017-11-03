@@ -58,8 +58,8 @@ if __name__ == '__main__':
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
     
-    Sprite(blackLine1,(650,30))
-    Sprite(blackLine2,(650,180))
+    Sprite(blackLine1,(640,30))
+    Sprite(blackLine2,(640,180))
     
 #App().listenMouseEvent('click',mouseClick1)
 App().run()
