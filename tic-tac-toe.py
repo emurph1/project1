@@ -12,7 +12,6 @@ blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
 
-   
     
     
 #runs the game
