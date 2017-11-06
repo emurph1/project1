@@ -12,39 +12,39 @@ blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
 def isEmpty(sdgsd):
-    if data['square1'] = O or data['square2'] = X:
+    if data['square1'] == O or data['square2'] == X:
         return True
     else: 
         return False
-    if data['square2'] = O or data['square2'] = X:
+    if data['square2'] == O or data['square2'] == X:
         return True
     else: 
         return False 
-    if data['square3'] = O or data['square3'] = X:
+    if data['square3'] == O or data['square3'] == X:
         return True
     else: 
         return False
-    if data['square4'] = O or data['square4'] = X:
+    if data['square4'] == O or data['square4'] == X:
         return True
     else: 
         return False
-    if data['square5'] = O or data['square5'] = X:
+    if data['square5'] == O or data['square5'] == X:
         return True
     else: 
         return False
-    if data['square6'] = O or data['square6'] = X:
+    if data['square6'] == O or data['square6'] == X:
         return True
     else: 
         return False
-    if data['square7'] = O or data['square7'] = X:
+    if data['square7'] == O or data['square7'] == X:
         return True
     else: 
         return False
-    if data['square8'] = O or data['square8'] = X:
+    if data['square8'] == O or data['square8'] == X:
         return True
     else: 
         return False
-    if data['square9'] = O or data['square9'] = X:
+    if data['square9'] == O or data['square9'] == X:
         return True
     else: 
         return False
