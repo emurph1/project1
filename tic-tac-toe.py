@@ -11,11 +11,32 @@ blue = Color(0x0000FF,1)
 blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
+#def isEmpty(sdgsd):
+    #if data['square1'] = redCircle = CircleAsset(75, whiteOutline, red) or data['square1'] = 
+    
+#def winner():
 
+#def fullBoard():
+
+#def computerTurn():
+
+#def mouseClick(dgsg):
     
     
 #runs the game
 if __name__ == '__main__':
+    
+    data = {}
+    data['square1'] = '' 
+    data ['square2'] = ''
+    data ['square3'] = ''
+    data ['square4'] = ''
+    data ['square5'] = ''
+    data ['square6'] = ''
+    data ['square7'] = ''
+    data ['square8'] = ''
+    data ['square9'] = ''
+    
 #creates the board
     blackRect1 = RectangleAsset(826, 25, whiteOutline, black) #TOP HORIZONTAL
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
@@ -27,9 +48,6 @@ if __name__ == '__main__':
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
 
-#square variables
-    #square1 = 
-    
    
     
 #pieces: cirlce and 'x'
@@ -41,8 +59,7 @@ if __name__ == '__main__':
     Sprite(redCircle,(130, 100))
     Sprite(whiteCircle,(130, 100))
     
-    Sprite(blackLine1,(640,30))
-    Sprite(blackLine2,(640,180))
+    X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 #App().listenMouseEvent('click',mouseClick1)
 App().run()
