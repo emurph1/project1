@@ -85,8 +85,6 @@ if __name__ == '__main__':
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
-
-   
     
 #pieces: cirlce and 'x'
     redCircle = CircleAsset(75, whiteOutline, red)
