@@ -48,7 +48,11 @@ def isEmpty(sdgsd):
         return True
     else: 
         return False
-#def fullBoard():
+def fullBoard():
+    if data['square1'] and data['square2'] and data['square3'] and data['square4'] and data['square5'] and data['square6'] and data['square7'] and data['square8'] and data['square9'] == O or X:
+        return True
+    else:
+        return False
     
 #def winner():
 
