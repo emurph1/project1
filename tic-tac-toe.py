@@ -98,5 +98,5 @@ if __name__ == '__main__':
     O = Sprite(redCircle,(130, 100)) and Sprite(whiteCircle,(130, 100))
     X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
-App().listenMouseEvent('click',mouseClick1)
+App().listenMouseEvent('click',mouseClick)
 App().run()
