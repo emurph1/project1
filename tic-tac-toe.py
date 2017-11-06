@@ -28,7 +28,7 @@ if __name__ == '__main__':
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
 
 #square variables
-    square1 = 
+    #square1 = 
     
    
     
