@@ -11,12 +11,46 @@ blue = Color(0x0000FF,1)
 blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
-#def isEmpty(sdgsd):
-    #if data['square1'] = redCircle = CircleAsset(75, whiteOutline, red) or data['square1'] = 
+def isEmpty(sdgsd):
+    if data['square1'] = O or data['square2'] = X:
+        return True
+    else: 
+        return False
+    if data['square2'] = O or data['square2'] = X:
+        return True
+    else: 
+        return False 
+    if data['square3'] = O or data['square3'] = X:
+        return True
+    else: 
+        return False
+    if data['square4'] = O or data['square4'] = X:
+        return True
+    else: 
+        return False
+    if data['square5'] = O or data['square5'] = X:
+        return True
+    else: 
+        return False
+    if data['square6'] = O or data['square6'] = X:
+        return True
+    else: 
+        return False
+    if data['square7'] = O or data['square7'] = X:
+        return True
+    else: 
+        return False
+    if data['square8'] = O or data['square8'] = X:
+        return True
+    else: 
+        return False
+    if data['square9'] = O or data['square9'] = X:
+        return True
+    else: 
+        return False
+#def fullBoard():
     
 #def winner():
-
-#def fullBoard():
 
 #def computerTurn():
 
@@ -56,9 +90,7 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
-    Sprite(redCircle,(130, 100))
-    Sprite(whiteCircle,(130, 100))
-    
+    O = Sprite(redCircle,(130, 100)) and Sprite(whiteCircle,(130, 100))
     X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 #App().listenMouseEvent('click',mouseClick1)
