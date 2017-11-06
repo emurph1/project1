@@ -13,41 +13,41 @@ whiteOutline = LineStyle(1, white)
 
 def isEmpty(sdgsd):
     if data['square1'] == O or data['square2'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square2'] == O or data['square2'] == X:
-        return True
+        return False
     else: 
-        return False 
+        return True 
     if data['square3'] == O or data['square3'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square4'] == O or data['square4'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square5'] == O or data['square5'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square6'] == O or data['square6'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square7'] == O or data['square7'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square8'] == O or data['square8'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
     if data['square9'] == O or data['square9'] == X:
-        return True
-    else: 
         return False
+    else: 
+        return True
 def fullBoard():
     if data['square1'] and data['square2'] and data['square3'] and data['square4'] and data['square5'] and data['square6'] and data['square7'] and data['square8'] and data['square9'] == O or X:
         return True
