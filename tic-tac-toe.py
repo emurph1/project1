@@ -77,8 +77,7 @@ if __name__ == '__main__':
     data['square7'] = ''
     data['square8'] = ''
     data['square9'] = ''
-    data['player1'] = ''
-    
+
     
 #creates the board
     blackRect1 = RectangleAsset(826, 25, whiteOutline, black) #TOP HORIZONTAL
