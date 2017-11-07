@@ -2,6 +2,7 @@
 #2017-11-1
 #tic-tac-toe.py - tic-tac-toe game
 from ggame import *
+from random import randint
 
 black = Color(0x000000,1)
 white = Color(0xFFFFFF,1)
@@ -58,12 +59,12 @@ def fullBoard():
 #def winner():
 
 #computer turn
-def computerTurn():
-    if event == 
+#def computerTurn():
+
+        
 
 #click that sprites X when it is player turn
 def mouseClick(event):
-    print(event.x,event.y)
     if event.x < 250 and event.y <200: #square1
         Sprite(blackLine1,(70,30)) 
         Sprite(blackLine2,(70,180))
