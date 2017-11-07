@@ -66,7 +66,7 @@ def mouseClick(Event):
 if __name__ == '__main__':
     
     data = {}
-    data['square1'] = '' 
+    data['square1'] = ''
     data ['square2'] = ''
     data ['square3'] = ''
     data ['square4'] = ''
