@@ -58,10 +58,12 @@ def fullBoard():
 #def winner():
 
 #def computerTurn():
+    
 
 #click that sprites X when it is player turn
-def mouseClick(Event):
-    if 
+def mouseClick(event):
+    if event.x <250 and event.y <200:
+        print('square1')
         
     
 #runs the game
