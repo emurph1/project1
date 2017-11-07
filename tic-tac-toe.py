@@ -67,14 +67,14 @@ if __name__ == '__main__':
     
     data = {}
     data['square1'] = ''
-    data ['square2'] = ''
-    data ['square3'] = ''
-    data ['square4'] = ''
-    data ['square5'] = ''
-    data ['square6'] = ''
-    data ['square7'] = ''
-    data ['square8'] = ''
-    data ['square9'] = ''
+    data['square2'] = ''
+    data['square3'] = ''
+    data['square4'] = ''
+    data['square5'] = ''
+    data['square6'] = ''
+    data['square7'] = ''
+    data['square8'] = ''
+    data['square9'] = ''
     data['player1'] = ''
     
     
