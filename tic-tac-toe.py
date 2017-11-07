@@ -11,7 +11,7 @@ blue = Color(0x0000FF,1)
 blackOutline = LineStyle(20, black)
 whiteOutline = LineStyle(1, white)
 
-def isEmpty(sdgsd):
+def isEmpty(squares):
     if data['square1'] == O or data['square2'] == X:
         return False
     else: 
@@ -48,6 +48,7 @@ def isEmpty(sdgsd):
         return False
     else: 
         return True
+
 def fullBoard():
     if data['square1'] and data['square2'] and data['square3'] and data['square4'] and data['square5'] and data['square6'] and data['square7'] and data['square8'] and data['square9'] == O or X:
         return True
@@ -60,7 +61,7 @@ def fullBoard():
 
 #click that sprites X when it is player turn
 def mouseClick(Event):
-    X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
+    X = Sprite(blackLine1) and Sprite(blackLine2)
     
 #runs the game
 if __name__ == '__main__':
@@ -95,8 +96,6 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
-    O = Sprite(redCircle,(130, 100)) and Sprite(whiteCircle,(130, 100))
-    X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 App().listenMouseEvent('click',mouseClick)
 App().run()
