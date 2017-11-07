@@ -62,6 +62,8 @@ def fullBoard():
 #click that sprites X when it is player turn
 def mouseClick(Event):
     if data['square1']:
+        
+    if data['square2']:
         X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 #runs the game
@@ -97,6 +99,8 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
+    O = Sprite(redCircle, (200,200))
+    X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 App().listenMouseEvent('click',mouseClick)
 App().run()
