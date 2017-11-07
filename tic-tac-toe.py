@@ -99,7 +99,7 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
-    O = Sprite(redCircle, (200,200))
+    O = Sprite(redCircle, (100,200))
     X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     
 App().listenMouseEvent('click',mouseClick)
