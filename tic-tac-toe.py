@@ -62,9 +62,9 @@ def fullBoard():
 #click that sprites X when it is player turn
 def mouseClick(Event):
     if data['square1']:
-        
+        O
     if data['square2']:
-        X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
+        X 
     
 #runs the game
 if __name__ == '__main__':
