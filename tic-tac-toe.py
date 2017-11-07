@@ -64,8 +64,8 @@ def fullBoard():
 def mouseClick(event):
     print(event.x,event.y)
     if event.x < 250 and event.y <200: #square1
-        Sprite(blackLine1,(60,30)) 
-        Sprite(blackLine2,(60,180))
+        Sprite(blackLine1,(70,30)) 
+        Sprite(blackLine2,(70,180))
     if event.x < 550 and event.x > 250 and event.y <200: #square2
         Sprite(blackLine1,(350,20)) 
         Sprite(blackLine2,(350,170))
@@ -73,8 +73,8 @@ def mouseClick(event):
         Sprite(blackLine1,(630,30)) 
         Sprite(blackLine2,(630,180))
     if event.x < 250 and event.y <415 and event.y >200: #square4
-        Sprite(blackLine1,(60,240)) 
-        Sprite(blackLine2,(60,390))
+        Sprite(blackLine1,(70,240)) 
+        Sprite(blackLine2,(70,390))
     if event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200: #square5
         Sprite(blackLine1,(350,240)) 
         Sprite(blackLine2,(350,390))
@@ -82,14 +82,14 @@ def mouseClick(event):
         Sprite(blackLine1,(630,240)) 
         Sprite(blackLine2,(630,390))
     if event.x < 250 and event.y <600 and event.y > 415: #square7
-        Sprite(blackLine1,(60,30)) 
-        Sprite(blackLine2,(60,180))  
+        Sprite(blackLine1,(630,240)) 
+        Sprite(blackLine2,(630,390))  
     if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415: #square8
-        Sprite(blackLine1,(60,30)) 
-        Sprite(blackLine2,(60,180))
+        Sprite(blackLine1,(630,30)) 
+        Sprite(blackLine2,(630,180))
     if event.x < 800 and event.x > 550  and event.y <600 and event.y > 415: #square9
-        Sprite(blackLine1,(60,30)) 
-        Sprite(blackLine2,(60,180))
+        Sprite(blackLine1,(630,240)) 
+        Sprite(blackLine2,(630,590))
         
 #runs the game
 if __name__ == '__main__':
