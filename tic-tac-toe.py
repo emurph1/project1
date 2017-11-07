@@ -69,7 +69,6 @@ def mouseClick(event):
     if event.x < 700 and event.x > 550 and event.y <200:
         print('square3')
     if event.x < 250 and event.y <200:
-        
         print('square4')
     
 #runs the game
