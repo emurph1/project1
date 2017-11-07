@@ -66,7 +66,8 @@ def mouseClick(event):
         #print('square1')
     if event.x < 550 and event.x > 250 and event.y <200:
         print('square2')
-    if event.x < 600 and event.x > 550 and event.y <200:
+    if event.x < 700 and event.x > 550 and event.y <200:
+        print(event)
         print('square3')
     #if event.x < 250 and event.y <200:
         #print('square4')
