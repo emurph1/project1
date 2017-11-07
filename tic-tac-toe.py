@@ -69,17 +69,17 @@ def mouseClick(event):
         print('square2')
     if event.x < 700 and event.x > 550 and event.y <200:
         print('square3')
-    if event.x < 250 and event.y <400:
+    if event.x < 250 and event.y <415:
         print('square4')
-    if event.x < 550 and event.x > 250 and event.y <400:
+    if event.x < 550 and event.x > 250 and event.y <415 event.y > 200:
         print('square5')
-    if event.x < 700 and event.x > 550 and event.y <400:
+    if event.x < 700 and event.x > 550 and event.y <415 and event.y >200:
         print('square6')
-    if event.x < 250 and event.y <600 and event.y > 400:
+    if event.x < 250 and event.y <600 and event.y > 415:
         print('square7')   
-    if event.x < 550 and event.x > 250 and event.y <600 and event.y > 400:
+    if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415:
         print('square8')
-    if event.x < 700 and event.x > 550  and event.y <600 and event.y > 400:
+    if event.x < 700 and event.x > 550  and event.y <600 and event.y > 415:
         print('square8')
         
 #runs the game
