@@ -82,13 +82,13 @@ def mouseClick(event):
         Sprite(blackLine1,(630,240)) 
         Sprite(blackLine2,(630,390))
     if event.x < 250 and event.y <600 and event.y > 415: #square7
-        Sprite(blackLine1,(630,240)) 
-        Sprite(blackLine2,(630,390))  
+        Sprite(blackLine1,(70,440)) 
+        Sprite(blackLine2,(70,590))  
     if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415: #square8
-        Sprite(blackLine1,(630,30)) 
-        Sprite(blackLine2,(630,180))
+        Sprite(blackLine1,(350,440)) 
+        Sprite(blackLine2,(350,590))
     if event.x < 800 and event.x > 550  and event.y <600 and event.y > 415: #square9
-        Sprite(blackLine1,(630,240)) 
+        Sprite(blackLine1,(630,440)) 
         Sprite(blackLine2,(630,590))
         
 #runs the game
