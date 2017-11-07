@@ -57,8 +57,9 @@ def fullBoard():
     
 #def winner():
 
-#def computerTurn():
-    
+#computer turn
+def computerTurn():
+    if event == 
 
 #click that sprites X when it is player turn
 def mouseClick(event):
