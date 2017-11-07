@@ -63,7 +63,7 @@ def fullBoard():
 #click that sprites X when it is player turn
 def mouseClick(event):
     if event.x < 250 and event.y <200:
-        print('square1')
+        print(X)
     if event.x < 550 and event.x > 250 and event.y <200:
         print('square2')
     if event.x < 800 and event.x > 550 and event.y <200:
