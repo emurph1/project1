@@ -60,47 +60,46 @@ def fullBoard():
 
 #computer turn
 #def computerTurn():
-
-        
+     
 
 #click that sprites X when it is player turn
 def mouseClick(event):
     if event.x < 250 and event.y <200: #square1
         Sprite(blackLine1,(70,30)) 
         Sprite(blackLine2,(70,180))
-        data['square1'] += 1
+        data['square1'] += 'X'
     if event.x < 550 and event.x > 250 and event.y <200: #square2
         Sprite(blackLine1,(350,20)) 
         Sprite(blackLine2,(350,170))
-        data['square2'] += 1
+        data['square2'] += 'X'
     if event.x < 800 and event.x > 550 and event.y < 200:#square3
         Sprite(blackLine1,(630,30)) 
         Sprite(blackLine2,(630,180))
-        data['square3'] += 1
+        data['square3'] += 'X'
     if event.x < 250 and event.y <415 and event.y >200: #square4
         Sprite(blackLine1,(70,240)) 
         Sprite(blackLine2,(70,390))
-        data['square4'] += 1
+        data['square4'] += 'X'
     if event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200: #square5
         Sprite(blackLine1,(350,240)) 
         Sprite(blackLine2,(350,390))
-        data['square5'] += 1
+        data['square5'] += 'X'
     if event.x < 800 and event.x > 550 and event.y < 415 and event.y >200: #square6
         Sprite(blackLine1,(630,240)) 
         Sprite(blackLine2,(630,390))
-        data['square6'] += 1
+        data['square6'] += 'X'
     if event.x < 250 and event.y <600 and event.y > 415: #square7
         Sprite(blackLine1,(70,440)) 
         Sprite(blackLine2,(70,590))
-        data['square7'] += 1
+        data['square7'] += 'X'
     if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415: #square8
         Sprite(blackLine1,(350,440)) 
         Sprite(blackLine2,(350,590))
-        data['square8'] += 1
+        data['square8'] += 'X'
     if event.x < 800 and event.x > 550  and event.y <600 and event.y > 415: #square9
         Sprite(blackLine1,(630,440)) 
         Sprite(blackLine2,(630,590))
-        data['square9'] += 1
+        data['square9'] += 'X'
         
 #runs the game
 if __name__ == '__main__':
