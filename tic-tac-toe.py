@@ -80,8 +80,7 @@ if __name__ == '__main__':
     data['square8'] = ''
     data['square9'] = ''
     data['player1'] = ''
-    data['X'] = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
-    data['O'] = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
+    
     
 #creates the board
     blackRect1 = RectangleAsset(826, 25, whiteOutline, black) #TOP HORIZONTAL
@@ -100,7 +99,8 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
-    
+    data['X'] = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
+    data['O'] = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
     
 App().listenMouseEvent('click',mouseClick)
 App().run()
