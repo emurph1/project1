@@ -63,24 +63,32 @@ def fullBoard():
 #click that sprites X when it is player turn
 def mouseClick(event):
     if event.x < 250 and event.y <200:
-        Sprite(blackLine1,(40,30)) 
-        Sprite(blackLine2,(40,180))
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 550 and event.x > 250 and event.y <200:
-        print('square2')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 800 and event.x > 550 and event.y <200:
-        print('square3')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 250 and event.y <415 and event.y >200:
-        print('square4')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200:
-        print('square5')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 800 and event.x > 550 and event.y < 415 and event.y >200:
-        print('square6')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 250 and event.y <600 and event.y > 415:
-        print('square7')   
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))  
     if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415:
-        print('square8')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
     if event.x < 800 and event.x > 550  and event.y <600 and event.y > 415:
-        print('square9')
+        Sprite(blackLine1,(60,30)) 
+        Sprite(blackLine2,(60,180))
         
 #runs the game
 if __name__ == '__main__':
@@ -114,8 +122,8 @@ if __name__ == '__main__':
     blackLine1 = LineAsset(120, 150, blackOutline)
     blackLine2 = LineAsset(120, -150, blackOutline)
     
-    X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
-    O = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
+    #X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
+    #O = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
     
 App().listenMouseEvent('click',mouseClick)
 App().run()
