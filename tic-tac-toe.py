@@ -66,8 +66,8 @@ def mouseClick(event):
         Sprite(blackLine1,(60,30)) 
         Sprite(blackLine2,(60,180))
     if event.x < 550 and event.x > 250 and event.y <200:
-        Sprite(blackLine1,(60,30)) 
-        Sprite(blackLine2,(60,180))
+        Sprite(blackLine1,(350,20)) 
+        Sprite(blackLine2,(350,170))
     if event.x < 800 and event.x > 550 and event.y <200:
         Sprite(blackLine1,(60,30)) 
         Sprite(blackLine2,(60,180))
