@@ -61,10 +61,13 @@ def fullBoard():
 
 #computer turn
 def computerTurn():
-    num = 1
+    num = 2
     if num == 1:
         Sprite(redCircle,(130,100))
         Sprite(whiteCircle,(130,100))
+    if num == 2:
+        Sprite(redCircle,(410,100))
+        Sprite(whiteCircle,(410,100))
     
         
 
