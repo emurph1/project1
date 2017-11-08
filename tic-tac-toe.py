@@ -90,7 +90,7 @@ def mouseClick(event):
         data['square6'] += 'X'
     if event.x < 250 and event.y <600 and event.y > 415: #square7
         Sprite(blueLine1,(70,440)) 
-        Sprite(bluekLine2,(70,590))
+        Sprite(blueLine2,(70,590))
         data['square7'] += 'X'
     if event.x < 550 and event.x > 250 and event.y <600 and event.y > 415: #square8
         Sprite(blueLine1,(350,440)) 
