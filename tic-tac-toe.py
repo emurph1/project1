@@ -131,7 +131,7 @@ if __name__ == '__main__':
     redCircle = CircleAsset(75, whiteOutline, red)
     whiteCircle = CircleAsset(60, whiteOutline, white)
     blueLine1 = LineAsset(120, 150, blueOutline)
-    bluekLine2 = LineAsset(120, -150, blueOutline)
+    blueLine2 = LineAsset(120, -150, blueOutline)
     
     #X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
     #O = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
