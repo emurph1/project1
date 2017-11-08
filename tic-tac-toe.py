@@ -61,7 +61,7 @@ def fullBoard():
 
 #computer turn
 def computerTurn():
-    num = 3
+    num = 4
     if num == 1:
         Sprite(redCircle,(130,100))
         Sprite(whiteCircle,(130,100))
@@ -71,7 +71,9 @@ def computerTurn():
     if num == 3:
         Sprite(redCircle,(700,100))
         Sprite(whiteCircle,(700,100))   
-    
+    if num == 4:
+        Sprite(redCircle,(130,310))
+        Sprite(whiteCircle,(130,310))
         
 
 #click that sprites X when it is player turn
