@@ -8,6 +8,7 @@ black = Color(0x000000,1)
 white = Color(0xFFFFFF,1)
 red = Color(0xFF0000,1)
 blue = Color(0x0000FF,1)
+green = Color(0x00FF00,1)
 
 blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
@@ -107,6 +108,8 @@ def computerTurn():
             Sprite(redCircle,(700,510))
             Sprite(whiteCircle,(700,510))
             data['square9'] += 'O'
+        else:
+            Sprite(diffSquare,(200,200)
         
 #click that sprites X when it is player turn
 def mouseClick(event):
@@ -167,6 +170,7 @@ if __name__ == '__main__':
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
+    diffSquare = TextAsset('Choose a different square', fill=green, style= 'bold 80pt Times') #text saying needs to choose a different square
 
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
