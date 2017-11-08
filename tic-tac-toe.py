@@ -133,8 +133,7 @@ if __name__ == '__main__':
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
     
 #pieces: cirlce and 'x'
-    redCircle = CircleAsset(75, whiteOutline, red)
-    whiteCircle = CircleAsset(60, whiteOutline, white)
+    redCircle = CircleAsset(75, whiteOutline, red) and CircleAsset(60, whiteOutline, white)
     blueLine1 = LineAsset(120, 150, blueOutline)
     blueLine2 = LineAsset(120, -150, blueOutline)
     
