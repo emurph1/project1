@@ -53,7 +53,7 @@ def isEmpty(squares):
 
 #information on whether the board is full or not
 def fullBoard():
-    if data['square1'] and data['square2'] and data['square3'] and data['square4'] and data['square5'] and data['square6'] and data['square7'] and data['square8'] and data['square9'] == O or X:
+    if data['square1'] and data['square2'] and data['square3'] and data['square4'] and data['square5'] and data['square6'] and data['square7'] and data['square8'] and data['square9'] == 'O' or 'X':
         
         return True
     else:
@@ -189,7 +189,8 @@ if __name__ == '__main__':
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
     diffSquare = TextAsset('Choose a different square', fill=green, style= 'bold 40pt Times') #text saying needs to choose a different square
-
+    fullBoard = TextAsset('Full Board', fill=green, style= 'bold 40pt Times')
+    
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
     Sprite(blackRect3, (250,0))#THE LEFT VERITCAL LINE
