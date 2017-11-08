@@ -69,63 +69,63 @@ def computerTurn():
             Sprite(whiteCircle,(130,100))
             data['square1'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 2:
         if data['square2'] != 'X':
             Sprite(redCircle,(410,100))
             Sprite(whiteCircle,(410,100))
             data['square2'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 3:
         if data['square3'] != 'X':
             Sprite(redCircle,(700,100))
             Sprite(whiteCircle,(700,100))
             data['square3'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 4:
         if data['square4'] != 'X':
             Sprite(redCircle,(130,310))
             Sprite(whiteCircle,(130,310))
             data['square4'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 5:
         if data['square5'] != 'X':
             Sprite(redCircle,(410,310))
             Sprite(whiteCircle,(410,310))
             data['square5'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 6:
         if data['square6'] != 'X':
             Sprite(redCircle,(700,310))
             Sprite(whiteCircle,(700,310))
             data['square6'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 7:
         if data['square7'] != 'X':
             Sprite(redCircle,(130,510))
             Sprite(whiteCircle,(130,510))
             data['square7'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 8:
         if data['square8'] != 'X':
             Sprite(redCircle,(410,510))
             Sprite(whiteCircle,(410,510))
             data['square8'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
     if num == 9:
         if data['square9'] != 'X':
             Sprite(redCircle,(700,510))
             Sprite(whiteCircle,(700,510))
             data['square9'] += 'O'
         else:
-            Sprite(diffSquare,(400,100))
+            Sprite(diffSquare,(350,100))
         
 #click that sprites X when it is player turn
 def mouseClick(event):
