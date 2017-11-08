@@ -14,7 +14,7 @@ blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
 
 def isEmpty(squares):
-    if data['square1'] == 'O' or data['square2'] == 'X':
+    if squares == 1 and (data['square1'] == 'O' or data['square2'] == 'X'):
         return False
     else: 
         return True
@@ -131,7 +131,7 @@ def computerTurn():
         
 #click that sprites X when it is player turn
 def mouseClick(event):
-    if event.x < 250 and event.y <200: #square1
+    if event.x < 250 and event.y <200 and isEmpty(1): #square1
         Sprite(blueLine1,(70,30)) 
         Sprite(blueLine2,(70,180))
         data['square1'] += 'X'
