@@ -17,35 +17,35 @@ def isEmpty(squares):
         return False
     else: 
         return True
-    elif data['square2'] == O or data['square2'] == X:
+    if data['square2'] == O or data['square2'] == X:
         return False
     else: 
         return True 
-    elif data['square3'] == O or data['square3'] == X:
+    if data['square3'] == O or data['square3'] == X:
         return False
     else: 
         return True
-    elif data['square4'] == O or data['square4'] == X:
+    if data['square4'] == O or data['square4'] == X:
         return False
     else: 
         return True
-    elif data['square5'] == O or data['square5'] == X:
+    if data['square5'] == O or data['square5'] == X:
         return False
     else: 
         return True
-    elif data['square6'] == O or data['square6'] == X:
+    if data['square6'] == O or data['square6'] == X:
         return False
     else: 
         return True
-    elif data['square7'] == O or data['square7'] == X:
+    if data['square7'] == O or data['square7'] == X:
         return False
     else: 
         return True
-    elif data['square8'] == O or data['square8'] == X:
+    if data['square8'] == O or data['square8'] == X:
         return False
     else: 
         return True
-    elif data['square9'] == O or data['square9'] == X:
+    if data['square9'] == O or data['square9'] == X:
         return False
     else: 
         return True
