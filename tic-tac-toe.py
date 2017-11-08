@@ -61,7 +61,7 @@ def fullBoard():
 
 #computer turn
 def computerTurn():
-    num = 7
+    num = 8
     if num == 1:
         Sprite(redCircle,(130,100))
         Sprite(whiteCircle,(130,100))
@@ -81,9 +81,14 @@ def computerTurn():
         Sprite(redCircle,(700,310))
         Sprite(whiteCircle,(700,310))
     if num == 7:
-        Sprite(redCircle,(130,590))
-        Sprite(whiteCircle,(130,590))
-        
+        Sprite(redCircle,(130,510))
+        Sprite(whiteCircle,(130,510))
+    if num == 8:
+        Sprite(redCircle,(410,510))
+        Sprite(whiteCircle,(410,510))
+    if num == 9:
+        Sprite(redCircle,(700,510))
+        Sprite(whiteCircle,(700,510))  
 
 #click that sprites X when it is player turn
 def mouseClick(event):
