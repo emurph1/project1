@@ -60,8 +60,10 @@ def fullBoard():
 #def winner():
 
 #computer turn
-#def computerTurn():
-     
+def computerTurn():
+    num = randint(1,9)
+    if num == 1:
+        Sprite(redCircle)
 
 #click that sprites X when it is player turn
 def mouseClick(event):
@@ -132,9 +134,6 @@ if __name__ == '__main__':
     whiteCircle = CircleAsset(60, whiteOutline, white)
     blueLine1 = LineAsset(120, 150, blueOutline)
     blueLine2 = LineAsset(120, -150, blueOutline)
-    
-    #X = Sprite(blackLine1,(640,30)) and Sprite(blackLine2,(640,180))
-    #O = Sprite(redCircle, (130,100)) and Sprite(whiteCircle, (130,100))
     
 App().listenMouseEvent('click',mouseClick)
 App().run()
