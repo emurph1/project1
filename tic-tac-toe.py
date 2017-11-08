@@ -14,39 +14,23 @@ blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
 
 def isEmpty(squares):
-    if squares == 1 and (data['square1'] == 'O' or data['square2'] == 'X'):
+    if squares == 1 and (data['square1'] == 'O' or data['square1'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 2 and (data['square2'] == 'O' or data['square2'] =='X'):
+    elif squares == 2 and (data['square2'] == 'O' or data['square2'] =='X'):
         return False
-    else: 
-        return True 
-    if squares == 3 and (data['square3'] == 'O' or data['square3'] == 'X'):
+    elif squares == 3 and (data['square3'] == 'O' or data['square3'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 4 and (data['square4'] == 'O' or data['square4'] == 'X'):
+    elif squares == 4 and (data['square4'] == 'O' or data['square4'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 5 and (data['square5'] == 'O' or data['square5'] == 'X'):
+    elif squares == 5 and (data['square5'] == 'O' or data['square5'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 6 and (data['square6'] == 'O' or data['square6'] == 'X'):
+    elif squares == 6 and (data['square6'] == 'O' or data['square6'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 7 and (data['square7'] == 'O' or data['square7'] == 'X'):
+    elif squares == 7 and (data['square7'] == 'O' or data['square7'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 8 and (data['square8'] == 'O' or data['square8'] == 'X'):
+    elif squares == 8 and (data['square8'] == 'O' or data['square8'] == 'X'):
         return False
-    else: 
-        return True
-    if squares == 9 and (data['square9'] == 'O' or data['square9'] == 'X'):
+    elif squares == 9 and (data['square9'] == 'O' or data['square9'] == 'X'):
         return False
     else: 
         return True
