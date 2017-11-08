@@ -61,7 +61,7 @@ def fullBoard():
 
 #computer turn
 def computerTurn():
-    num = 9
+    num = randint(1,9)
     if num == 1:
         Sprite(redCircle,(130,100))
         Sprite(whiteCircle,(130,100))
