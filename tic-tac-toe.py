@@ -58,7 +58,10 @@ def fullBoard():
     else:
         return False
     
-#def winner():
+def winner():
+    if data['square1'] == 'X' and data['square2'] =='X' and data['square2'] =='X':
+        Sprite(winner, (230,150))
+    elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X'
 
 #computer turn
 def computerTurn():
@@ -168,6 +171,8 @@ if __name__ == '__main__':
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
+    pWinner = TextAsset('Player Wins!!', fill=green, style= 'bold 80pt Times')
+    cWinner = TextAsset('Computer Wins!:(', fill=green, style= 'bold 80pt Times')
     
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
