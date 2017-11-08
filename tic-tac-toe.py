@@ -63,7 +63,8 @@ def fullBoard():
 def computerTurn():
     num = randint(1,9)
     if num == 1:
-        Sprite(redCircle)
+        data['square1'] = Sprite(redCircle)
+        
 
 #click that sprites X when it is player turn
 def mouseClick(event):
