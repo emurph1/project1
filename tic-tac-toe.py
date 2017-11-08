@@ -69,64 +69,46 @@ def computerTurn():
             Sprite(redCircle,(130,100))
             Sprite(whiteCircle,(130,100))
             data['square1'] += 'O'
-        if data['square1'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 2:
         if data['square2'] != 'X' and isEmpty(2):
             Sprite(redCircle,(410,100))
             Sprite(whiteCircle,(410,100))
             data['square2'] += 'O'
-        if data['square2'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 3:
         if data['square3'] != 'X' and isEmpty(3):
             Sprite(redCircle,(700,100))
             Sprite(whiteCircle,(700,100))
             data['square3'] += 'O'
-        if data['square3'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 4:
         if data['square4'] != 'X' and isEmpty(4):
             Sprite(redCircle,(130,310))
             Sprite(whiteCircle,(130,310))
             data['square4'] += 'O'
-        if data['square4'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 5:
         if data['square5'] != 'X' and isEmpty(5):
             Sprite(redCircle,(410,310))
             Sprite(whiteCircle,(410,310))
             data['square5'] += 'O'
-        if data['square6'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 6:
         if data['square6'] != 'X' and isEmpty(6):
             Sprite(redCircle,(700,310))
             Sprite(whiteCircle,(700,310))
             data['square6'] += 'O'
-        if data['square6'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 7:
         if data['square7'] != 'X' and isEmpty(7):
             Sprite(redCircle,(130,510))
             Sprite(whiteCircle,(130,510))
             data['square7'] += 'O'
-        if data['square7'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 8:
         if data['square8'] != 'X' and isEmpty(8):
             Sprite(redCircle,(410,510))
             Sprite(whiteCircle,(410,510))
             data['square8'] += 'O'
-        if data['square8'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
     if num == 9:
         if data['square9'] != 'X' and isEmpty(9):
             Sprite(redCircle,(700,510))
             Sprite(whiteCircle,(700,510))
             data['square9'] += 'O'
-        if data['square9'] == 'X' or 'O':
-            Sprite(diffSquare,(330,200))
             
         
 #click that sprites X when it is player turn
@@ -188,8 +170,6 @@ if __name__ == '__main__':
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
-    diffSquare = TextAsset('Choose a different square', fill=green, style= 'bold 40pt Times') #text saying needs to choose a different square
-    fullBoard = TextAsset('Full Board', fill=green, style= 'bold 40pt Times')
     
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
