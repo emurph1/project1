@@ -63,8 +63,8 @@ def fullBoard():
 def computerTurn():
     num = 1
     if num == 1:
-        Sprite(redCircle,(120,110))
-        Sprite(whiteCircle,(120,110))
+        Sprite(redCircle,(130,100))
+        Sprite(whiteCircle,(130,100))
     
         
 
