@@ -14,39 +14,39 @@ blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
 
 def isEmpty(squares):
-    if data['square1'] == O or data['square2'] == X:
+    if data['square1'] == 'O' or data['square2'] == 'X':
         return False
     else: 
         return True
-    if data['square2'] == O or data['square2'] == X:
+    if data['square2'] == 'O' or data['square2'] =='X':
         return False
     else: 
         return True 
-    if data['square3'] == O or data['square3'] == X:
+    if data['square3'] == 'O' or data['square3'] == 'X':
         return False
     else: 
         return True
-    if data['square4'] == O or data['square4'] == X:
+    if data['square4'] == 'O' or data['square4'] == 'X':
         return False
     else: 
         return True
-    if data['square5'] == O or data['square5'] == X:
+    if data['square5'] == 'O' or data['square5'] == 'X':
         return False
     else: 
         return True
-    if data['square6'] == O or data['square6'] == X:
+    if data['square6'] == 'O' or data['square6'] == 'X':
         return False
     else: 
         return True
-    if data['square7'] == O or data['square7'] == X:
+    if data['square7'] == 'O' or data['square7'] == 'X':
         return False
     else: 
         return True
-    if data['square8'] == O or data['square8'] == X:
+    if data['square8'] == 'O' or data['square8'] == 'X':
         return False
     else: 
         return True
-    if data['square9'] == O or data['square9'] == X:
+    if data['square9'] == 'O' or data['square9'] == 'X':
         return False
     else: 
         return True
@@ -126,6 +126,7 @@ def computerTurn():
             data['square9'] += 'O'
         if data['square9'] == 'X' or 'O':
             Sprite(diffSquare,(330,200))
+            
         
 #click that sprites X when it is player turn
 def mouseClick(event):
