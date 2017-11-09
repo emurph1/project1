@@ -137,7 +137,7 @@ def mouseClick(event):
         Sprite(blueLine2,(350,590))
         data['square8'] = 'X'
     elif event.x < 800 and event.x > 550  and event.y <600 and event.y > 415 and isEmpty(9): #square9
-        Sprite(blueLine1,(630,440)) 
+        Sprite(blueLine1,(630,440))
         Sprite(blueLine2,(630,590))
         data['square9'] = 'X'
     computerTurn()
@@ -165,7 +165,7 @@ def fullBoard():
     else:
         return False
         
- #finds the winner and says who wins   
+ #finds the winner and says who wins
 def winner():
         if data['square1'] == 'X' and data['square2'] == 'X' and data['square2'] == 'X':
             Sprite(pWinner, (230,150))
