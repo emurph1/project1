@@ -163,6 +163,7 @@ def computerTurn():
             data['square9'] = 'O'
         else:
             computerTurn()
+    winner()
 
 #click that sprites X when it is player turn
 def mouseClick(event):
