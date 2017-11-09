@@ -13,6 +13,7 @@ green = Color(0x00FF00,1)
 blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
 
+#Finds out whether the square is empty or not
 def isEmpty(squares):
     if squares == 1 and (data['square1'] == 'O' or data['square1'] == 'X'):
         return False
@@ -96,7 +97,8 @@ def winner():
             Sprite(cWinner, (300,100))
         elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (300,100))
-
+        else:
+            Sprite(nWinner, (300,100))
 #computer turn
 def computerTurn():
     num = randint(1,9)
