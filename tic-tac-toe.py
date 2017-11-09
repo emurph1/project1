@@ -37,23 +37,23 @@ def isEmpty(squares):
 
 #information on whether the board is full or not
 def fullBoard():
-    if data['square1'] == 'O' or 'X':
+    if data['square1'] == 'O' or data['square1'] == 'X':
         return True
-    elif data['square2'] == 'O' or 'X':
+    elif data['square2'] == 'O' or data['square2'] == 'X':
         return True
-    elif data['square3'] == 'O' or 'X':
+    elif data['square3'] == 'O' or data['square3'] == 'X':
         return True
-    elif data['square4'] == 'O' or 'X':
+    elif data['square4'] == 'O' or data['square4'] == 'X':
         return True
-    elif data['square5'] == 'O' or 'X':
+    elif data['square5'] == 'O' or data['square5'] == 'X':
         return True
-    elif data['square6'] == 'O' or 'X':
+    elif data['square6'] == 'O' or data['square6'] == 'X':
         return True
-    elif data['square7'] == 'O' or 'X':
+    elif data['square7'] == 'O' or data['square7'] == 'X':
         return True
-    elif data['square8'] == 'O' or 'X':
+    elif data['square8'] == 'O' or data['square8'] =='X':
         return True
-    elif data['square9'] == 'O' or 'X':
+    elif data['square9'] == 'O' or data['square9'] == 'X':
         return True
     else:
         return False
