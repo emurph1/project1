@@ -164,6 +164,7 @@ def fullBoard():
         return True
     else:
         return False
+        
  #finds the winner and says who wins   
 def winner():
     if fullboard():
@@ -224,8 +225,8 @@ if __name__ == '__main__':
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
-    pWinner = TextAsset('Player Wins!!', fill=green, style= 'bold 80pt Times')
-    cWinner = TextAsset('Computer Wins!:(', fill=green, style= 'bold 80pt Times')
+    pWinner = TextAsset('Player Wins!! Game Over.', fill=green, style= 'bold 80pt Times')
+    cWinner = TextAsset('Computer Wins!:( Gam Over', fill=green, style= 'bold 80pt Times')
     
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
