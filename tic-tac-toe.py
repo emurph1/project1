@@ -155,7 +155,7 @@ def computerTurn():
                 Sprite(redCircle,(410,510))
                 Sprite(whiteCircle,(410,510))
                 data['square8'] = 'O'
-                else:
+            else:
                 num = randint(1,9)
         elif num == 9:
             if data['square9'] != 'X' and isEmpty(9):
