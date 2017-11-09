@@ -83,7 +83,8 @@ def winner():
         
 #computer turn
 def computerTurn():
-    for i in range(0,randint(1,9))
+    num = randint(1,9)
+    for i in range(0,num)
         if num == 1:
             if data['square1'] != 'X' and isEmpty(1):
                 Sprite(redCircle,(130,100))
