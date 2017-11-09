@@ -57,7 +57,7 @@ def fullBoard():
         return True
     else:
         return False
-    
+ #finds the winner and says who wins   
 def winner():
     if fullBoard():
         if data['square1'] == 'X' and data['square2'] == 'X' and data['square2'] == 'X':
@@ -146,6 +146,8 @@ def computerTurn():
                 Sprite(redCircle,(700,510))
                 Sprite(whiteCircle,(700,510))
                 data['square9'] = 'O'
+        else:
+                num = randint(1,9)
 
 #click that sprites X when it is player turn
 def mouseClick(event):
