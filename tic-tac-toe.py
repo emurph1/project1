@@ -106,7 +106,7 @@ def computerTurn():
                 Sprite(redCircle,(130,100))
                 Sprite(whiteCircle,(130,100))
                 data['square1'] = 'O'
-            else:
+            elif:
                 num = randint(1,9)
         elif num == 2:
             if data['square2'] != 'X' and isEmpty(2):
