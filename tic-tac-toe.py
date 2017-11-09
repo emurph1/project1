@@ -34,7 +34,69 @@ def isEmpty(squares):
         return False
     else: 
         return True
+
+#information on whether the board is full or not
+def fullBoard():
+    if data['square1'] == 'O' or data['square1'] == 'X':
+        return True
+    elif data['square2'] == 'O' or data['square2'] == 'X':
+        return True
+    elif data['square3'] == 'O' or data['square3'] == 'X':
+        return True
+    elif data['square4'] == 'O' or data['square4'] == 'X':
+        return True
+    elif data['square5'] == 'O' or data['square5'] == 'X':
+        return True
+    elif data['square6'] == 'O' or data['square6'] == 'X':
+        return True
+    elif data['square7'] == 'O' or data['square7'] == 'X':
+        return True
+    elif data['square8'] == 'O' or data['square8'] =='X':
+        return True
+    elif data['square9'] == 'O' or data['square9'] == 'X':
+        return True
+    else:
+        return False
         
+ #finds the winner and says who wins
+def winner():
+        if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'X' and data['square4'] == 'X' and data['square7'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square7'] == 'X' and data['square8'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'O' and data['square2'] =='O' and data['square3'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
+            Sprite(cWinner, (300,100))
+
 #computer turn
 def computerTurn():
     num = randint(1,9)
@@ -142,69 +204,6 @@ def mouseClick(event):
         data['square9'] = 'X'
     winner()
     computerTurn()
-
-#information on whether the board is full or not
-def fullBoard():
-    if data['square1'] == 'O' or data['square1'] == 'X':
-        return True
-    elif data['square2'] == 'O' or data['square2'] == 'X':
-        return True
-    elif data['square3'] == 'O' or data['square3'] == 'X':
-        return True
-    elif data['square4'] == 'O' or data['square4'] == 'X':
-        return True
-    elif data['square5'] == 'O' or data['square5'] == 'X':
-        return True
-    elif data['square6'] == 'O' or data['square6'] == 'X':
-        return True
-    elif data['square7'] == 'O' or data['square7'] == 'X':
-        return True
-    elif data['square8'] == 'O' or data['square8'] =='X':
-        return True
-    elif data['square9'] == 'O' or data['square9'] == 'X':
-        return True
-    else:
-        return False
-        
- #finds the winner and says who wins
-def winner():
-        if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square1'] == 'X' and data['square4'] == 'X' and data['square7'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square7'] == 'X' and data['square8'] == 'X' and data['square9'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
-            Sprite(pWinner, (300,100))
-        elif data['square1'] == 'O' and data['square2'] =='O' and data['square3'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] == 'O':
-            Sprite(cWinner, (300,100))
-        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
-            Sprite(cWinner, (300,100))
-        
         
 #runs the game
 if __name__ == '__main__':
