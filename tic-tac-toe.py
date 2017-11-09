@@ -106,63 +106,63 @@ def computerTurn():
                 Sprite(redCircle,(130,100))
                 Sprite(whiteCircle,(130,100))
                 data['square1'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 2:
             if data['square2'] != 'X' and isEmpty(2):
                 Sprite(redCircle,(410,100))
                 Sprite(whiteCircle,(410,100))
                 data['square2'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 3:
             if data['square3'] != 'X' and  isEmpty(3):
                 Sprite(redCircle,(700,100))
                 Sprite(whiteCircle,(700,100))
                 data['square3'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 4:
             if data['square4'] != 'X' and isEmpty(4):
                 Sprite(redCircle,(130,310))
                 Sprite(whiteCircle,(130,310))
                 data['square4'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 5:
             if data['square5'] != 'X' and isEmpty(5):
                 Sprite(redCircle,(410,310))
                 Sprite(whiteCircle,(410,310))
                 data['square5'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 6:
             if data['square6'] != 'X' and isEmpty(6):
                 Sprite(redCircle,(700,310))
                 Sprite(whiteCircle,(700,310))
                 data['square6'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 7:
             if data['square7'] != 'X' and isEmpty(7):
                 Sprite(redCircle,(130,510))
                 Sprite(whiteCircle,(130,510))
                 data['square7'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 8:
             if data['square8'] != 'X' and isEmpty(8):
                 Sprite(redCircle,(410,510))
                 Sprite(whiteCircle,(410,510))
                 data['square8'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
         elif num == 9:
             if data['square9'] != 'X' and isEmpty(9):
                 Sprite(redCircle,(700,510))
                 Sprite(whiteCircle,(700,510))
                 data['square9'] = 'O'
-            elif:
+            else:
                 num = randint(1,9)
 
 #click that sprites X when it is player turn
