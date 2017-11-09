@@ -16,13 +16,13 @@ whiteOutline = LineStyle(1, white)
 def isEmpty(squares):
     if squares == 1 and (data['square1'] == 'O' or data['square1'] == 'X'):
         return False
-    elif squares = 2 and (data['square2'] == 'O' or data['square2'] == 'X'):
+    elif squares == 2 and (data['square2'] == 'O' or data['square2'] == 'X'):
         return False
-    elif squares = 3 and (data['square3'] == 'O' or data['square3'] == 'X'):
+    elif squares == 3 and (data['square3'] == 'O' or data['square3'] == 'X'):
         return False
-    elif squares = 4 and (data['square4'] == 'O' or data['square4'] == 'X'):
+    elif squares == 4 and (data['square4'] == 'O' or data['square4'] == 'X'):
         return False
-    elif squares = 5 and (data['square5'] == 'O' or data['square5'] == 'X'):
+    elif squares == 5 and (data['square5'] == 'O' or data['square5'] == 'X'):
         return False
     elif squares == 6 and (data['square6'] == 'O' or data['square6'] == 'X'):
         return False
@@ -44,41 +44,41 @@ def fullBoard():
     
 def winner():
     if fullBoard():
-        if data['square1'] = 'X' and data['square2'] ='X' and data['square2'] ='X':
+        if data['square1'] == 'X' and data['square2'] == 'X' and data['square2'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square1'] = 'X' and data['square5'] = 'X' and data['square9'] = 'X':
+        elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square1'] = 'X' and data['square4'] = 'X' and data['square7'] = 'X':
+        elif data['square1'] == 'X' and data['square4'] == 'X' and data['square7'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square2'] = 'X' and data['square5'] = 'X' and data['square8'] = 'X':
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square3'] = 'X' and data['square6'] = 'X' and data['square9'] = 'X':
+        elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square3'] = 'X' and data['square5'] = 'X' and data['square7'] = 'X':
+        elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square4'] = 'X' and data['square5'] = 'X' and data['square6'] = 'X':
+        elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square7'] = 'X' and data['square8'] = 'X' and data['square9'] = 'X':
+        elif data['square7'] == 'X' and data['square8'] == 'X' and data['square9'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square2'] = 'X' and data['square5'] = 'X' and data['square8'] = 'X':
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
             Sprite(pWinner, (230,150))
-        elif data['square1'] = 'O' and data['square2'] ='O' and data['square2'] ='O':
+        elif data['square1'] == 'O' and data['square2'] =='O' and data['square2'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square1'] = 'O' and data['square5'] = 'O' and data['square9'] = 'O':
+        elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square1'] = 'O' and data['square4'] = 'O' and data['square7'] = 'O':
+        elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square2'] = 'O' and data['square5'] = 'O' and data['square8'] = 'O':
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square3'] = 'O' and data['square6'] = 'O' and data['square9'] = 'O':
+        elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square3'] = 'O' and data['square5'] = 'O' and data['square7'] = 'O':
+        elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square4'] = 'O' and data['square5'] = 'O' and data['square6'] = 'O':
+        elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square7'] = 'O' and data['square8'] = 'O' and data['square9'] = 'O':
+        elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] == 'O':
             Sprite(cWinner, (230,150))
-        elif data['square2'] = 'O' and data['square5'] = 'O' and data['square8'] = 'O':
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (230,150))
         
 #computer turn
