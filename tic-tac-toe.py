@@ -97,7 +97,7 @@ def winner():
             Sprite(cWinner, (300,100))
         elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (300,100))
-        #else:
+        #elif fullboard() and isEmpty(1) and isEmpty(2) and isEmpty(3) and isEmpty(3)
             #Sprite(nWinner, (300,100))
 #computer turn
 def computerTurn():
