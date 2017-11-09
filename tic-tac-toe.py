@@ -83,8 +83,7 @@ def winner():
         
 #computer turn
 def computerTurn():
-    while True:
-        num = randint(1,9)
+    for i in range(0,randint(1,9))
         if num == 1:
             if data['square1'] != 'X' and isEmpty(1):
                 Sprite(redCircle,(130,100))
@@ -130,8 +129,7 @@ def computerTurn():
                 Sprite(redCircle,(700,510))
                 Sprite(whiteCircle,(700,510))
                 data['square9'] = 'O'
-        else:
-            return False
+
 #click that sprites X when it is player turn
 def mouseClick(event):
     if event.x < 250 and event.y <200 and isEmpty(1): #square1
