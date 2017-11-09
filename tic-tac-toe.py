@@ -59,7 +59,6 @@ def fullBoard():
         return False
  #finds the winner and says who wins   
 def winner():
-    if fullBoard():
         if data['square1'] == 'X' and data['square2'] == 'X' and data['square2'] == 'X':
             Sprite(pWinner, (230,150))
         elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
