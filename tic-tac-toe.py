@@ -97,7 +97,7 @@ def winner():
         elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (300,100))
         else:
-            Sprite(nwinner, (300,100))
+            Sprite(nWinner, (300,100))
 
 #computer turn
 def computerTurn():
