@@ -96,6 +96,8 @@ def winner():
             Sprite(cWinner, (300,100))
         elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
             Sprite(cWinner, (300,100))
+        else:
+            
 
 #computer turn
 def computerTurn():
@@ -226,7 +228,8 @@ if __name__ == '__main__':
     blackRect3 = RectangleAsset(25, 600, whiteOutline, black) #LEFT VERTICAL
     blackRect4 = RectangleAsset(25, 600, whiteOutline, black) #RIGHT VERITCAL
     pWinner = TextAsset('Player Wins!! Game Over.', fill=green, style= 'bold 80pt Times')
-    cWinner = TextAsset('Computer Wins!:( Gam Over', fill=green, style= 'bold 80pt Times')
+    cWinner = TextAsset('Computer Wins!:( Game Over', fill=green, style= 'bold 80pt Times')
+    nWinner = TextAsset('No one wins!:( Game Over', fill=green, style= 'bold 80pt Times')
     
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
