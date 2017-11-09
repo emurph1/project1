@@ -146,8 +146,8 @@ def computerTurn():
                 Sprite(redCircle,(700,510))
                 Sprite(whiteCircle,(700,510))
                 data['square9'] = 'O'
-        else:
-            num = randint(1,9)
+            else:
+                num = randint(1,9)
 
 #click that sprites X when it is player turn
 def mouseClick(event):
