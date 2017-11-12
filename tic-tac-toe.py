@@ -152,17 +152,6 @@ def computerTurn():
             computerTurn()
     winner()
     
-def clearBoard():
-    if fullBoard() and mouseClick():
-        data['square1'] = ''
-        data['square2'] = ''
-        data['square3'] = ''
-        data['square4'] = ''
-        data['square5'] = ''
-        data['square6'] = ''
-        data['square7'] = ''
-        data['square8'] = ''
-        data['square9'] = ''
 
 #click that sprites X when it is player turn
 def mouseClick(event):
