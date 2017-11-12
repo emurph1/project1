@@ -83,7 +83,7 @@ def winner():
             Sprite(cWinner, (300,100))
         else:
             if fullBoard():
-                Sprite(nWinner, (300,100))
+                Sprite(nWinner, (300,0))
 #computer turn
 def computerTurn():
     num = randint(1,9)
