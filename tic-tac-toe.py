@@ -13,127 +13,201 @@ green = Color(0x00FF00,1)
 blueOutline = LineStyle(20, blue)
 whiteOutline = LineStyle(1, white)
 
+#Finds out whether the square is empty or not
+def isEmpty(squares):
+    if squares == 1 and (data['square1'] == 'O' or data['square1'] == 'X'):
+        return False
+    elif squares == 2 and (data['square2'] == 'O' or data['square2'] == 'X'):
+        return False
+    elif squares == 3 and (data['square3'] == 'O' or data['square3'] == 'X'):
+        return False
+    elif squares == 4 and (data['square4'] == 'O' or data['square4'] == 'X'):
+        return False
+    elif squares == 5 and (data['square5'] == 'O' or data['square5'] == 'X'):
+        return False
+    elif squares == 6 and (data['square6'] == 'O' or data['square6'] == 'X'):
+        return False
+    elif squares == 7 and (data['square7'] == 'O' or data['square7'] == 'X'):
+        return False
+    elif squares == 8 and (data['square8'] == 'O' or data['square8'] == 'X'):
+        return False
+    elif squares == 9 and (data['square9'] == 'O' or data['square9'] == 'X'):
+        return False
+    else: 
+        return True
 
- #finds the winner and says who wins
-def winner():
-    if (data["sq1"] == 'X' and data["sq2"] == 'X' and data["sq3"] == 'X') or \
-     (data["sq4"] == 'X' and data["sq5"] == 'X' and data["sq6"] == 'X') or \
-     (data["sq7"] == 'X' and data["sq8"] == 'X' and data["sq9"] == 'X') or \
-     (data["sq1"] == 'X' and data["sq4"] == 'X' and data["sq7"] == 'X') or \
-     (data["sq2"] == 'X' and data["sq5"] == 'X' and data["sq8"] == 'X') or \
-     (data["sq3"] == 'X' and data["sq6"] == 'X' and data["sq9"] == 'X') or \
-     (data["sq1"] == 'X' and data["sq5"] == 'X' and data["sq9"] == 'X') or \
-     (data["sq3"] == 'X' and data["sq5"] == 'X' and data["sq7"] == 'X'):
-        Sprite(pWinner, (250, 100))
-    elif (data["sq1"] == 'O' and data["sq2"] == 'O' and data["sq3"] == 'O') or \
-     (data["sq4"] == 'O' and data["sq5"] == 'O' and data["sq6"] == 'O') or \
-     (data["sq7"] == 'O' and data["sq8"] == 'O' and data["sq9"] == 'O') or \
-     (data["sq1"] == 'O' and data["sq4"] == 'O' and data["sq7"] == 'O') or \
-     (data["sq2"] == 'O' and data["sq5"] == 'O' and data["sq8"] == 'O') or \
-     (data["sq3"] == 'O' and data["sq6"] == 'O' and data["sq9"] == 'O') or \
-     (data["sq1"] == 'O' and data["sq5"] == 'O' and data["sq9"] == 'O') or \
-     (data["sq3"] == 'O' and data["sq5"] == 'O' and data["sq7"] == 'O'):
-        Sprite(cWinner,(250,100))
+#information on whether the board is full or not
+def fullBoard():
+    if (data['square1'] == 'O' or data['square1'] == 'X') and (data['square2'] == 'O' or data['square2'] == 'X') and (data['square3'] == 'O' or data['square3'] == 'X') and (data['square4'] == 'O' or data['square4'] == 'X') and (data['square5'] == 'O' or data['square5'] == 'X') and (data['square6'] == 'O' or data['square6'] == 'X') and (data['square7'] == 'O' or data['square7'] == 'X') and  (data['square8'] == 'O' or data['square8'] == 'X') and (data['square9'] == 'O' or data['square9'] == 'X'):  
+        return True
     else:
         return False
+        
+ #finds the winner and says who wins
+def winner():
+        if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'X' and data['square4'] == 'X' and data['square7'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square7'] == 'X' and data['square8'] == 'X' and data['square9'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
+            Sprite(pWinner, (300,100))
+        elif data['square1'] == 'O' and data['square2'] =='O' and data['square3'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] == 'O':
+            Sprite(cWinner, (300,100))
+        elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
+            Sprite(cWinner, (300,100))
+        else:
+            if fullBoard():
+                Sprite(nWinner, (300,0))
 #computer turn
-def computerTurn(num):
-    if num == 1 and (data["sq1"] != 'X' or data["sq1"] != 'O'):
-        Sprite(redCircle,(35,20)) 
-        Sprite(whiteCircle,(45,30))
-        data['sq1'] = 'O'
-    elif num == 2 and (data["sq2"] != 'X' or data["sq2"] != 'O'):
-        Sprite(redCircle,(335,20)) 
-        Sprite(whiteCircle,(345,30))
-        data['sq2'] = 'O'
-    elif num == 3 and (data["sq3"] != 'X' or data["sq3"] != 'O'):
-        Sprite(redCircle,(625,20)) 
-        Sprite(whiteCircle,(635,30))
-        data['sq3'] = 'O'
-    elif num == 4 and (data["sq4"] != 'X' or data["sq4"] != 'O'):
-        Sprite(redCircle,(35,230)) 
-        Sprite(whiteCircle,(45,240))
-        data['sq4'] = 'O'
-    elif num == 5 and (data["sq5"] != 'X' or data["sq5"] != 'O'):
-        Sprite(redCircle,(335,230)) 
-        Sprite(whiteCircle,(345,240))
-        data['sq5'] = 'O'
-    elif num == 6 and (data["sq6"] != 'X' or data["sq6"] != 'O'):    
-        Sprite(redCircle,(625,230)) 
-        Sprite(whiteCircle,(635,240))
-        data['sq6'] = 'O'
-    elif num == 7 and (data["sq7"] != 'X' or data["sq7"] != 'O'):  
-        Sprite(redCircle,(35,430)) 
-        Sprite(whiteCircle,(45,440))
-        data['sq7'] = 'O'
-    elif num == 8 and (data["sq8"] != 'X' or data["sq8"] != 'O'):   
-        Sprite(redCircle,(335,430)) 
-        Sprite(whiteCircle,(345,440))
-        data['sq8'] = 'O'
-    elif num == 9 and (data["sq9"] != 'X' or data["sq9"] != 'O'):
-        Sprite(redCircle,(635,430))
-        Sprite(whiteCircle,(645,440))
-        data['sq9'] = 'O'
-    else:
-        computerTurn(randint(1,9))
-    winner()
-
-#click that sprites X when it is player turn
-def playerX(event):
-    if event.x < 250 and event.y <200 and (data["sq1"] != 'X' or data["sq1"] != 'O'): #square1
-        Sprite(blueLine1,(35,10)) 
-        Sprite(blueLine2,(35,10))
-        data['sq1'] = 'X'
-    elif event.x < 550 and event.x > 250 and event.y <200 and (data["sq2"] != 'X' or data["sq2"] != 'O'): #square2
-        Sprite(blueLine1,(335,10)) 
-        Sprite(blueLine2,(335,10))
-        data['sq2'] = 'X'
-    elif event.x < 800 and event.x > 550 and event.y < 200 and (data["sq3"] != 'X' or data["sq3"] != 'O'):#square3
-        Sprite(blueLine1,(625,10)) 
-        Sprite(blueLine2,(625,10))
-        data['sq3'] = 'X'
-    elif event.x < 250 and event.y <415 and event.y >200 and (data["sq4"] != 'X' or data["sq4"] != 'O'): #square4
-        Sprite(blueLine1,(35,220)) 
-        Sprite(blueLine2,(35,220))
-        data['sq4'] = 'X'
-    elif event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200 and (data["sq5"] != 'X' or data["sq5"] != 'O'): #square5
-        Sprite(blueLine1,(335,220)) 
-        Sprite(blueLine2,(335,220))
-        data['sq5'] = 'X'
-    elif event.x < 800 and event.x > 550 and event.y < 415 and event.y >200 and (data["sq6"] != 'X' or data["sq6"] != 'O'): #square6
-        Sprite(blueLine1,(625,220)) 
-        Sprite(blueLine2,(625,220))
-        data['sq6'] = 'X'
-    elif event.x < 250 and event.y <600 and event.y > 415 and (data["sq7"] != 'X' or data["sq7"] != 'O'): #square7
-        Sprite(blueLine1,(35,420)) 
-        Sprite(blueLine2,(35,420))
-        data['sq7'] = 'X'
-    elif event.x < 550 and event.x > 250 and event.y <600 and event.y > 415 and (data["sq8"] != 'X' or data["sq8"] != 'O'): #square8
-        Sprite(blueLine1,(335,420)) 
-        Sprite(blueLine2,(335,420))
-        data['sq8'] = 'X'
-    elif event.x < 800 and event.x > 550  and event.y <600 and event.y > 415 and (data["sq9"] != 'X' or data["sq9"] != 'O'): #square9
-        Sprite(blueLine1,(635,420))
-        Sprite(blueLine2,(635,420))
-        data['sq9'] = 'X'
-    computerTurn(randint(1,9))
+def computerTurn():
+    num = randint(1,9)
+    if num == 1:
+        if data['square1'] != 'X' and isEmpty(1):
+            Sprite(redCircle,(130,100))
+            Sprite(whiteCircle,(130,100))
+            data['square1'] = 'O'
+        else:
+            computerTurn()
+    elif num == 2:
+        if data['square2'] != 'X' and isEmpty(2):
+            Sprite(redCircle,(410,100))
+            Sprite(whiteCircle,(410,100))
+            data['square2'] = 'O'
+        else:
+            computerTurn()
+    elif num == 3:
+        if data['square3'] != 'X' and  isEmpty(3):
+            Sprite(redCircle,(700,100))
+            Sprite(whiteCircle,(700,100))
+            data['square3'] = 'O'
+        else:
+            computerTurn()
+    elif num == 4:
+        if data['square4'] != 'X' and isEmpty(4):
+            Sprite(redCircle,(130,310))
+            Sprite(whiteCircle,(130,310))
+            data['square4'] = 'O'
+        else:
+            computerTurn()
+    elif num == 5:
+        if data['square5'] != 'X' and isEmpty(5):
+            Sprite(redCircle,(410,310))
+            Sprite(whiteCircle,(410,310))
+            data['square5'] = 'O'
+        else:
+            computerTurn()
+    elif num == 6:
+        if data['square6'] != 'X' and isEmpty(6):
+            Sprite(redCircle,(700,310))
+            Sprite(whiteCircle,(700,310))
+            data['square6'] = 'O'
+        else:
+            computerTurn()
+    elif num == 7:
+        if data['square7'] != 'X' and isEmpty(7):
+            Sprite(redCircle,(130,510))
+            Sprite(whiteCircle,(130,510))
+            data['square7'] = 'O'
+        else:
+            computerTurn()
+    elif num == 8:
+        if data['square8'] != 'X' and isEmpty(8):
+            Sprite(redCircle,(410,510))
+            Sprite(whiteCircle,(410,510))
+            data['square8'] = 'O'
+        else:
+            computerTurn()
+    elif num == 9:
+        if data['square9'] != 'X' and isEmpty(9):
+            Sprite(redCircle,(700,510))
+            Sprite(whiteCircle,(700,510))
+            data['square9'] = 'O'
+        else:
+            computerTurn()
     winner()
     
+
+#click that sprites X when it is player turn
+def mouseClick(event):
+    if event.x < 250 and event.y <200 and isEmpty(1): #square1
+        Sprite(blueLine1,(70,30)) 
+        Sprite(blueLine2,(70,180))
+        data['square1'] = 'X'
+    elif event.x < 550 and event.x > 250 and event.y <200 and isEmpty(2): #square2
+        Sprite(blueLine1,(350,20)) 
+        Sprite(blueLine2,(350,170))
+        data['square2'] = 'X'
+    elif event.x < 800 and event.x > 550 and event.y < 200 and isEmpty(3):#square3
+        Sprite(blueLine1,(630,30)) 
+        Sprite(blueLine2,(630,180))
+        data['square3'] = 'X'
+    elif event.x < 250 and event.y <415 and event.y >200 and isEmpty(4): #square4
+        Sprite(blueLine1,(70,240)) 
+        Sprite(blueLine2,(70,390))
+        data['square4'] = 'X'
+    elif event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200 and isEmpty(5): #square5
+        Sprite(blueLine1,(350,240)) 
+        Sprite(blueLine2,(350,390))
+        data['square5'] = 'X'
+    elif event.x < 800 and event.x > 550 and event.y < 415 and event.y >200 and isEmpty(6): #square6
+        Sprite(blueLine1,(630,240)) 
+        Sprite(blueLine2,(630,390))
+        data['square6'] = 'X'
+    elif event.x < 250 and event.y <600 and event.y > 415 and isEmpty(7): #square7
+        Sprite(blueLine1,(70,440)) 
+        Sprite(blueLine2,(70,590))
+        data['square7'] = 'X'
+    elif event.x < 550 and event.x > 250 and event.y <600 and event.y > 415 and isEmpty(8): #square8
+        Sprite(blueLine1,(350,440)) 
+        Sprite(blueLine2,(350,590))
+        data['square8'] = 'X'
+    elif event.x < 800 and event.x > 550  and event.y <600 and event.y > 415 and isEmpty(9): #square9
+        Sprite(blueLine1,(630,440))
+        Sprite(blueLine2,(630,590))
+        data['square9'] = 'X'
+    winner()
+    computerTurn()
+        
 #runs the game
 if __name__ == '__main__':
     
     data = {}
-    data['sq1'] = ''
-    data['sq2'] = ''
-    data['sq3'] = ''
-    data['sq4'] = ''
-    data['sq5'] = ''
-    data['sq6'] = ''
-    data['sq7'] = ''
-    data['sq8'] = ''
-    data['sq9'] = ''
+    data['square1'] = ''
+    data['square2'] = ''
+    data['square3'] = ''
+    data['square4'] = ''
+    data['square5'] = ''
+    data['square6'] = ''
+    data['square7'] = ''
+    data['square8'] = ''
+    data['square9'] = ''
 
-        
 #creates the board
     blackRect1 = RectangleAsset(826, 25, whiteOutline, black) #TOP HORIZONTAL
     blackRect2 = RectangleAsset(826, 25, whiteOutline, black) #BOTTOM HORIZONTAL
@@ -142,7 +216,6 @@ if __name__ == '__main__':
     pWinner = TextAsset('Player Wins!! Game Over.', fill=green, style= 'bold 80pt Times')
     cWinner = TextAsset('Computer Wins!:( Game Over', fill=green, style= 'bold 80pt Times')
     nWinner = TextAsset('No one wins!:( Game Over', fill=green, style= 'bold 80pt Times')
-    diffSq = TextAsset('Please choose a different square', fill = green, style = 'bold 80pt Times')
     
     Sprite(blackRect1, (0,200))#TOP HORIZONTAL LINE
     Sprite(blackRect2, (0,400))#BOTTOM HORIZONAL LINE
@@ -150,11 +223,10 @@ if __name__ == '__main__':
     Sprite(blackRect4, (550,0)) #THE RIGHT VERTICAL LINE
     
 #pieces: cirlce and 'x'
-    redCircle = CircleAsset(75, whiteOutline, red)
-    whiteCircle = CircleAsset(65, whiteOutline, white)
+    redCircle = CircleAsset(75, whiteOutline, red) 
+    whiteCircle = CircleAsset(60, whiteOutline, white)
     blueLine1 = LineAsset(120, 150, blueOutline)
     blueLine2 = LineAsset(120, -150, blueOutline)
     
-    
-App().listenMouseEvent('click',playerX)
+App().listenMouseEvent('click',mouseClick)
 App().run()
