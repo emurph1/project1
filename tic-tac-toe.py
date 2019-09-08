@@ -16,8 +16,26 @@ whiteOutline = LineStyle(1, white)
 
  #finds the winner and says who wins
 def winner():
-     i = 0
-     
+    if (data["sq1"] == 'X' and data["sq2"] == 'X' and data["sq3"] == 'X') or \
+     (data["sq4"] == 'X' and data["sq5"] == 'X' and data["sq6"] == 'X') or \
+     (data["sq7"] == 'X' and data["sq8"] == 'X' and data["sq9"] == 'X') or \
+     (data["sq1"] == 'X' and data["sq4"] == 'X' and data["sq7"] == 'X') or \
+     (data["sq2"] == 'X' and data["sq5"] == 'X' and data["sq8"] == 'X') or \
+     (data["sq3"] == 'X' and data["sq6"] == 'X' and data["sq9"] == 'X') or \
+     (data["sq1"] == 'X' and data["sq5"] == 'X' and data["sq9"] == 'X') or \
+     (data["sq3"] == 'X' and data["sq5"] == 'X' and data["sq7"] == 'X'):
+        Sprite(pWinner, (250, 100))
+    elif (data["sq1"] == 'O' and data["sq2"] == 'O' and data["sq3"] == 'O') or \
+     (data["sq4"] == 'O' and data["sq5"] == 'O' and data["sq6"] == 'O') or \
+     (data["sq7"] == 'O' and data["sq8"] == 'O' and data["sq9"] == 'O') or \
+     (data["sq1"] == 'O' and data["sq4"] == 'O' and data["sq7"] == 'O') or \
+     (data["sq2"] == 'O' and data["sq5"] == 'O' and data["sq8"] == 'O') or \
+     (data["sq3"] == 'O' and data["sq6"] == 'O' and data["sq9"] == 'O') or \
+     (data["sq1"] == 'O' and data["sq5"] == 'O' and data["sq9"] == 'O') or \
+     (data["sq3"] == 'O' and data["sq5"] == 'O' and data["sq7"] == 'O'):
+        Sprite(cWinner,(250,100))
+    else:
+        return False
 #computer turn
 def computerTurn(num):
     if num == 1 and (data["sq1"] != 'X' or data["sq1"] != 'O'):
@@ -58,7 +76,7 @@ def computerTurn(num):
         data['sq9'] = 'O'
     else:
         computerTurn(randint(1,9))
-    
+    winner()
 
 #click that sprites X when it is player turn
 def playerX(event):
@@ -99,9 +117,11 @@ def playerX(event):
         Sprite(blueLine2,(635,420))
         data['sq9'] = 'X'
     computerTurn(randint(1,9))
-        
+    winner()
+    
 #runs the game
 if __name__ == '__main__':
+    
     data = {}
     data['sq1'] = ''
     data['sq2'] = ''
