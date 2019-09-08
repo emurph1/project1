@@ -1,5 +1,5 @@
 from ggame import *
-from random import randint
+import random
 
 black = Color(0x000000,1)
 white = Color(0xFFFFFF,1)
@@ -33,46 +33,57 @@ def winner():
         Sprite(cWinner,(250,100))
     else:
         return False
+    
+boxes = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 #computer turn
 def computerTurn(num):
     if num == 1 and (data["sq1"] != 'X' or data["sq1"] != 'O'):
         Sprite(redCircle,(35,20)) 
         Sprite(whiteCircle,(45,30))
         data['sq1'] = 'O'
+        boxes.remove(1)
     elif num == 2 and (data["sq2"] != 'X' or data["sq2"] != 'O'):
         Sprite(redCircle,(335,20)) 
         Sprite(whiteCircle,(345,30))
         data['sq2'] = 'O'
+        boxes.remove(2)
     elif num == 3 and (data["sq3"] != 'X' or data["sq3"] != 'O'):
         Sprite(redCircle,(625,20)) 
         Sprite(whiteCircle,(635,30))
         data['sq3'] = 'O'
+        boxes.remove(3)
     elif num == 4 and (data["sq4"] != 'X' or data["sq4"] != 'O'):
         Sprite(redCircle,(35,230)) 
         Sprite(whiteCircle,(45,240))
         data['sq4'] = 'O'
+        boxes.remove(4)
     elif num == 5 and (data["sq5"] != 'X' or data["sq5"] != 'O'):
         Sprite(redCircle,(335,230)) 
         Sprite(whiteCircle,(345,240))
         data['sq5'] = 'O'
+        boxes.remove(5)
     elif num == 6 and (data["sq6"] != 'X' or data["sq6"] != 'O'):    
         Sprite(redCircle,(625,230)) 
         Sprite(whiteCircle,(635,240))
         data['sq6'] = 'O'
+        boxes.remove(6)
     elif num == 7 and (data["sq7"] != 'X' or data["sq7"] != 'O'):  
         Sprite(redCircle,(35,430)) 
         Sprite(whiteCircle,(45,440))
         data['sq7'] = 'O'
+        boxes.remove(7)
     elif num == 8 and (data["sq8"] != 'X' or data["sq8"] != 'O'):   
         Sprite(redCircle,(335,430)) 
         Sprite(whiteCircle,(345,440))
         data['sq8'] = 'O'
+        boxes.remove(8)
     elif num == 9 and (data["sq9"] != 'X' or data["sq9"] != 'O'):
         Sprite(redCircle,(635,430))
         Sprite(whiteCircle,(645,440))
         data['sq9'] = 'O'
+        boxes.remove(9)
     else:
-        computerTurn(randint(1,9))
+        computerTurn(random.choice(boxes))
     winner()
 
 #click that sprites X when it is player turn
@@ -81,39 +92,48 @@ def playerX(event):
         Sprite(blueLine1,(35,10)) 
         Sprite(blueLine2,(35,10))
         data['sq1'] = 'X'
+        boxes.remove(1)
     elif event.x < 550 and event.x > 250 and event.y <200 and (data["sq2"] != 'X' or data["sq2"] != 'O'): #square2
         Sprite(blueLine1,(335,10)) 
         Sprite(blueLine2,(335,10))
         data['sq2'] = 'X'
+        boxes.remove(2)
     elif event.x < 800 and event.x > 550 and event.y < 200 and (data["sq3"] != 'X' or data["sq3"] != 'O'):#square3
         Sprite(blueLine1,(625,10)) 
         Sprite(blueLine2,(625,10))
         data['sq3'] = 'X'
+        boxes.remove(3)
     elif event.x < 250 and event.y <415 and event.y >200 and (data["sq4"] != 'X' or data["sq4"] != 'O'): #square4
         Sprite(blueLine1,(35,220)) 
         Sprite(blueLine2,(35,220))
         data['sq4'] = 'X'
+        boxes.remove(4)
     elif event.x < 550 and event.x > 250 and event.y < 415 and event.y > 200 and (data["sq5"] != 'X' or data["sq5"] != 'O'): #square5
         Sprite(blueLine1,(335,220)) 
         Sprite(blueLine2,(335,220))
         data['sq5'] = 'X'
+        boxes.remove(5)
     elif event.x < 800 and event.x > 550 and event.y < 415 and event.y >200 and (data["sq6"] != 'X' or data["sq6"] != 'O'): #square6
         Sprite(blueLine1,(625,220)) 
         Sprite(blueLine2,(625,220))
         data['sq6'] = 'X'
+        boxes.remove(6)
     elif event.x < 250 and event.y <600 and event.y > 415 and (data["sq7"] != 'X' or data["sq7"] != 'O'): #square7
         Sprite(blueLine1,(35,420)) 
         Sprite(blueLine2,(35,420))
         data['sq7'] = 'X'
+        boxes.remove(7)
     elif event.x < 550 and event.x > 250 and event.y <600 and event.y > 415 and (data["sq8"] != 'X' or data["sq8"] != 'O'): #square8
         Sprite(blueLine1,(335,420)) 
         Sprite(blueLine2,(335,420))
         data['sq8'] = 'X'
+        boxes.remove(8)
     elif event.x < 800 and event.x > 550  and event.y <600 and event.y > 415 and (data["sq9"] != 'X' or data["sq9"] != 'O'): #square9
         Sprite(blueLine1,(635,420))
         Sprite(blueLine2,(635,420))
         data['sq9'] = 'X'
-    computerTurn(randint(1,9))
+        boxes.remove(9)
+    computerTurn(random.choice(boxes))
     winner()
     
 #runs the game
